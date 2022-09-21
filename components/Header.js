@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export default function Header() {
   return (
     <HeaderWrapper>
-      <h1>Daily Bread</h1>
+      <h1>DAILY BREAD</h1>
     </HeaderWrapper>
   );
 }
@@ -11,6 +11,9 @@ export default function Header() {
 const HeaderWrapper = styled.header`
   display: flex;
   justify-content: center;
-  font-weight: bold;
   width: 100%;
+
+  h1 {
+    font-weight: 300;
+  }
 `;
