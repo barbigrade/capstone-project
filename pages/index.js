@@ -30,7 +30,7 @@ export default function Home(props) {
               <Bakery
                 name={bakery.name}
                 subtitle={bakery.subtitle}
-                price={bakery.priceRange}
+                priceRange={bakery.priceRange}
                 score={bakery.score}
                 key={bakery.id}
               />
