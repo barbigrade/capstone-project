@@ -2,8 +2,8 @@
   "bakeries": [
     {
       "id": "1",
-      "name": "Bakery 1",
-      "subtitle": "Handmade sourdough bread",
+      "name": "Bun In The Oven",
+      "subtitle": "Home-made sourdough bread",
       "priceRange": "€€",
       "score": "9.4",
       "image": "",
@@ -46,10 +46,10 @@
     },
     {
       "id": "2",
-      "name": "Bakery 2",
-      "subtitle": "Here for the grain",
+      "name": "Holy Cannoli",
+      "subtitle": "The sweetest stop on your journey",
       "priceRange": "€€",
-      "score": "9.4",
+      "score": "8.6",
       "image": "",
       "delivery": "Mon-Sun 07:00 - 17:00",
       "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -77,6 +77,14 @@
           "weight": "800g",
           "cost": "€4.50",
           "category": ["bread", "gluten-free", "sourdough"]
+        },
+        "Holy Cannoli": {
+          "image": "",
+          "name": "Holy Cannoli (2x)",
+          "ingredients": ["100% Wheat", "Egg", "Ricotta"],
+          "weight": "0",
+          "cost": "€2.50",
+          "category": ["pastry", "sweet", "cannoli"]
         },
         "Croissant": {
           "image": "",
@@ -106,8 +114,8 @@
     },
     {
       "id": "3",
-      "name": "Bakery 3",
-      "subtitle": "Lorem ipsum dolor sit amet",
+      "name": "Bake It Stop",
+      "subtitle": "No grain, no gain",
       "priceRange": "€",
       "score": "9.2",
       "image": "",
@@ -179,7 +187,7 @@
     },
     {
       "id": "4",
-      "name": "Bakery 4",
+      "name": "Bread Binge",
       "subtitle": "Spelt Differently",
       "priceRange": "€€€",
       "score": "9.8",
@@ -247,8 +255,8 @@
     },
     {
       "id": "5",
-      "name": "Bakery 5",
-      "subtitle": "Lorem ipsum dolor sit amet",
+      "name": "Making Dough",
+      "subtitle": "Never Enough Bread",
       "priceRange": "€€",
       "score": "8.8",
       "image": "",
@@ -328,8 +336,8 @@
     },
     {
       "id": "6",
-      "name": "Bakery 6",
-      "subtitle": "Sourdough and Soda Bread",
+      "name": "Breaking Bread",
+      "subtitle": "Live, Laugh, Loaf",
       "priceRange": "€€",
       "score": "9.7",
       "image": "",

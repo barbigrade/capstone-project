@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export default function Bakery({ name, subtitle, priceRange, score }) {
-  console.log(priceRange);
   return (
     <BakeryCard>
       <span>{name}</span>
