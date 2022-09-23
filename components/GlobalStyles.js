@@ -5,8 +5,9 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box
     }
     body {
-        font-family: sans-serif;
+        font-family: 'Quicksand', sans-serif;
         margin: 0;
+        padding: 0;
     }
 `;
 
