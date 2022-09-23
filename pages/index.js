@@ -22,22 +22,20 @@ export default function Home(props) {
         <title>DAILY BREAD</title>
       </Head>
 
-      <main>
-        <BakeryListContainer>
-          <h2>All Bakeries</h2>
-          <BakeryList>
-            {bakeries.map((bakery) => (
-              <Bakery
-                name={bakery.name}
-                subtitle={bakery.subtitle}
-                priceRange={bakery.priceRange}
-                score={bakery.score}
-                key={bakery.id}
-              />
-            ))}
-          </BakeryList>
-        </BakeryListContainer>
-      </main>
+      <BakeryListContainer>
+        <h2>All Bakeries</h2>
+        <BakeryList>
+          {bakeries.map((bakery) => (
+            <Bakery
+              name={bakery.name}
+              subtitle={bakery.subtitle}
+              priceRange={bakery.priceRange}
+              score={bakery.score}
+              key={bakery.id}
+            />
+          ))}
+        </BakeryList>
+      </BakeryListContainer>
     </>
   );
 }
