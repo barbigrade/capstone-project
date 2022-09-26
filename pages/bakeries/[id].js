@@ -1,3 +1,4 @@
+import styled from 'styled-components';
 import BakeryDetails from '../../components/BakeryDetails';
 import bakeries from '../../data.json';
 
@@ -35,7 +36,7 @@ export function getStaticProps(context) {
 
 export default function BakeryDetailPage({ bakeryData }) {
   return (
-    <div>
+    <BakeryContainer>
       <BakeryDetails
         image={bakeryData.image}
         name={bakeryData.name}
@@ -45,6 +46,11 @@ export default function BakeryDetailPage({ bakeryData }) {
         about={bakeryData.about}
         key={bakeryData.id}
       />
-    </div>
+    </BakeryContainer>
   );
 }
+
+const BakeryContainer = styled.div`
+  margin: 0 auto;
+  width: 95vw;
+`;

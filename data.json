@@ -6,7 +6,7 @@
       "subtitle": "Home-made sourdough bread",
       "priceRange": "€€",
       "score": "9.4",
-      "image": "/public/placeholder.jpg",
+      "image": "/placeholder.jpg",
       "delivery": "Mon-Sun 08:00 - 18:00",
       "about": "Supporting small and local suppliers, we specialize in handmade sourdough bread, extending our offer with an ever-changing selection of sweet and savory pastries.",
       "Menu": {
@@ -54,7 +54,7 @@
       "subtitle": "The sweetest stop on your journey",
       "priceRange": "€€",
       "score": "8.6",
-      "image": "",
+      "image": "/1.jpg",
       "delivery": "Mon-Sun 07:00 - 17:00",
       "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "Menu": {
@@ -129,7 +129,7 @@
       "subtitle": "No grain, no gain",
       "priceRange": "€",
       "score": "9.2",
-      "image": "",
+      "image": "/2.jpg",
       "delivery": "Mon-Sun 08:00 - 17:30",
       "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "Menu": {
@@ -209,7 +209,7 @@
       "subtitle": "Spelt Differently",
       "priceRange": "€€€",
       "score": "9.8",
-      "image": "",
+      "image": "/3.jpg",
       "delivery": "Mon-Sun 07:00 - 18:00",
       "about": "Handmade with love and whole-grain spelt flour.",
       "Menu": {
@@ -283,7 +283,7 @@
       "subtitle": "Never Enough Bread",
       "priceRange": "€€",
       "score": "8.8",
-      "image": "",
+      "image": "/4.jpg",
       "delivery": "Tue-Sun 08:00 - 18:00",
       "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "Menu": {
@@ -372,7 +372,7 @@
       "subtitle": "Live, Laugh, Loaf",
       "priceRange": "€€",
       "score": "9.7",
-      "image": "",
+      "image": "/5.jpg",
       "delivery": "Mon-Sun 08:30 - 17:30",
       "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "Menu": {

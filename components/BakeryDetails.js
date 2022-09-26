@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Image from 'next/image';
 
 export default function BakeryDetails({
   image,
@@ -10,20 +11,21 @@ export default function BakeryDetails({
 }) {
   return (
     <BakeryCard>
-      <div>{/*<Image src={image} layout="intrinsic" /> */}</div>
+      <div>
+        <Image src={image} layout="responsive" width={300} height={200} />
+      </div>
       <h2>{name}</h2>
       <Subtitle>{subtitle}</Subtitle>
-      <div>
-        <span>{score}</span>
-        <span>
-          Delivery <br />
-          {delivery}
-        </span>
-        <span>
-          About <br />
-          {about}
-        </span>
-      </div>
+
+      <span className="details">{score}</span>
+      <span className="details">
+        <strong>Delivery</strong> <br />
+        {delivery}
+      </span>
+      <span className="details">
+        <strong>About</strong> <br />
+        {about}
+      </span>
     </BakeryCard>
   );
 }
@@ -34,15 +36,20 @@ const BakeryCard = styled.div`
   font-weight: 500;
   flex-direction: column;
   padding: 0.7rem;
+
+  h2 {
+    margin: 0.7rem 0 0 0;
+    font-weight: 500;
+  }
+
+  span {
+    font-weight: 400;
+    margin: 0.5rem 0 0.5rem 0;
+  }
 `;
 
 const Subtitle = styled.h3`
   color: #5a5a5b;
-`;
-
-const PriceAndScore = styled.div`
-  display: flex;
-  justify-content: space-between;
-  font-weight: 400;
-  margin-top: 0.5rem;
+  margin: 0.2rem 0 0.5rem 0;
+  font-weight: 500;
 `;
