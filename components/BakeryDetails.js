@@ -17,12 +17,12 @@ export default function BakeryDetails({
       <h2>{name}</h2>
       <Subtitle>{subtitle}</Subtitle>
 
-      <span className="details">{score}</span>
-      <span className="details">
+      <span>{score}</span>
+      <span>
         <strong>Delivery</strong> <br />
         {delivery}
       </span>
-      <span className="details">
+      <span>
         <strong>About</strong> <br />
         {about}
       </span>
