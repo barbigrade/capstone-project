@@ -9,7 +9,6 @@ export default function Header() {
 }
 
 const HeaderWrapper = styled.header`
-  border-bottom: 1px dashed #000000;
   display: flex;
   justify-content: center;
   width: 100%;
