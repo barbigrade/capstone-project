@@ -1,12 +1,9 @@
 import styled from 'styled-components';
-import Image from 'next/image';
 
-export default function BakeryMenu({ image, name, ingredients, weight, cost }) {
+export default function BakeryMenu({ name, ingredients, weight, cost }) {
   return (
     <MenuCard>
-      <div>
-        <Image src={image} layout="responsive" width={100} height={100} />
-      </div>
+      <div></div>
       <h5>{name}</h5>
       <span>{ingredients}</span>
       <span>{weight}</span>

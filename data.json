@@ -9,7 +9,7 @@
       "image": "/placeholder.jpg",
       "delivery": "Mon-Sun 08:00 - 18:00",
       "about": "Supporting small and local suppliers, we specialize in handmade sourdough bread, extending our offer with an ever-changing selection of sweet and savory pastries.",
-      "Menu": [
+      "productMenu": [
         {
           "productId": "1",
           "image": "/placeholder.jpg",
@@ -57,7 +57,7 @@
       "image": "/1.jpg",
       "delivery": "Mon-Sun 07:00 - 17:00",
       "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "Menu": [
+      "productMenu": [
         {
           "productId": "5",
           "image": "",
@@ -132,7 +132,7 @@
       "image": "/2.jpg",
       "delivery": "Mon-Sun 08:00 - 17:30",
       "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "Menu": [
+      "productMenu": [
         {
           "productId": "12",
           "image": "",
@@ -212,7 +212,7 @@
       "image": "/3.jpg",
       "delivery": "Mon-Sun 07:00 - 18:00",
       "about": "Handmade with love and whole-grain spelt flour.",
-      "Menu": [
+      "productMenu": [
         {
           "productId": "19",
           "image": "",
@@ -286,7 +286,7 @@
       "image": "/4.jpg",
       "delivery": "Tue-Sun 08:00 - 18:00",
       "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "Menu": [
+      "productMenu": [
         {
           "productId": "25",
           "image": "",
@@ -375,7 +375,7 @@
       "image": "/5.jpg",
       "delivery": "Mon-Sun 08:30 - 17:30",
       "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "Menu": [
+      "productMenu": [
         {
           "productId": "33",
           "image": "",

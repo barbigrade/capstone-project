@@ -14,6 +14,13 @@ export function getBakeryById(id) {
   return bakeries.bakeries.find((bakery) => bakery.id === id);
 }
 
+export function getAllProductMenus() {
+  const allProductMenus = bakeries.bakeries.map((bakeries) => {
+    return bakeries.productMenu;
+  });
+  return allProductMenus;
+}
+
 export function getStaticPaths() {
   const allBakeriesData = getAllBakeries();
   const paths = allBakeriesData.map((bakeries) => {
@@ -51,12 +58,11 @@ export default function BakeryDetailPage({ bakeryData }) {
       </BakeryContainer>
       <BakeryContainer>
         <BakeryMenu
-          image={bakeryData.Menu.image}
-          name={bakeryData.Menu.name}
-          ingredients={bakeryData.Menu.ingredients}
-          weight={bakeryData.Menu.weight}
-          cost={bakeryData.Menu.cost}
-          key={bakeryData.Menu.productId}
+          name={bakeryData.name}
+          ingredients={bakeryData.ingredients}
+          weight={bakeryData.weight}
+          cost={bakeryData.cost}
+          key={bakeryData.productId}
         />
       </BakeryContainer>
     </>
