@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import BakeryDetails from '../../components/BakeryDetails';
+import BakeryMenu from '../../components/BakeryMenu';
 import bakeries from '../../data.json';
 
 export function getAllBakeries() {
@@ -36,17 +37,29 @@ export function getStaticProps(context) {
 
 export default function BakeryDetailPage({ bakeryData }) {
   return (
-    <BakeryContainer>
-      <BakeryDetails
-        image={bakeryData.image}
-        name={bakeryData.name}
-        subtitle={bakeryData.subtitle}
-        score={bakeryData.score}
-        delivery={bakeryData.delivery}
-        about={bakeryData.about}
-        key={bakeryData.id}
-      />
-    </BakeryContainer>
+    <>
+      <BakeryContainer>
+        <BakeryDetails
+          image={bakeryData.image}
+          name={bakeryData.name}
+          subtitle={bakeryData.subtitle}
+          score={bakeryData.score}
+          delivery={bakeryData.delivery}
+          about={bakeryData.about}
+          key={bakeryData.id}
+        />
+      </BakeryContainer>
+      <BakeryContainer>
+        <BakeryMenu
+          image={bakeryData.Menu.image}
+          name={bakeryData.Menu.name}
+          ingredients={bakeryData.Menu.ingredients}
+          weight={bakeryData.Menu.weight}
+          cost={bakeryData.Menu.cost}
+          key={bakeryData.Menu.productId}
+        />
+      </BakeryContainer>
+    </>
   );
 }
 
