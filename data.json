@@ -62,7 +62,7 @@
           "productId": "5",
           "image": "",
           "name": "Italian Sourdough",
-          "ingredients": "100% Wheat",
+          "ingredients": ["100% Wheat"],
           "weight": "900g",
           "cost": "€5.50",
           "category": ["bread", "sourdough"]
@@ -229,7 +229,7 @@
           "productId": "20",
           "image": "",
           "name": "Baguette",
-          "ingredients": "50-50 Whole-Grain Spelt Blend",
+          "ingredients": ["50-50 Whole-Grain Spelt Blend"],
           "weight": "450g",
           "cost": "€4.80",
           "category": ["bread", "baguette", "spelt"]
@@ -291,7 +291,7 @@
           "productId": "25",
           "image": "",
           "name": "House Sourdough Loaf",
-          "ingredients": "50-50 Whole-Grain Wheat Blend",
+          "ingredients": ["50-50 Whole-Grain Wheat Blend"],
           "weight": "900g",
           "cost": "€6.50",
           "category": ["bread", "sourdough", "whole-grain"]
@@ -412,7 +412,7 @@
           "productId": "36",
           "image": "",
           "name": "German Pumpernickel",
-          "ingredients": "100% Rye",
+          "ingredients": ["100% Rye"],
           "weight": "600g",
           "cost": "€3.90",
           "category": ["bread", "rye", "pumpernickel", "sweet", "sourdough"]
