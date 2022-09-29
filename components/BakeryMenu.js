@@ -10,7 +10,9 @@ export default function BakeryMenu({ image, name, ingredients, weight, cost }) {
         <Text>{weight}</Text>
         <Text className="cost">{cost}</Text>
       </TextWrapper>
-      <Image src={image} layout="responsive" width={60} height={60} />
+      <ImageWrapper>
+        <Image src={image} layout="fixed" width={135} height={135} />
+      </ImageWrapper>
     </MenuCard>
   );
 }
@@ -25,10 +27,6 @@ const MenuCard = styled.div`
   h4 {
     margin: 0.5rem 0 0.7rem 0;
     font-weight: 600;
-  }
-
-  .ingredients {
-    padding-right: 0.5rem;
   }
 
   .cost {
@@ -47,7 +45,15 @@ const Text = styled.span`
   font-size: 0.9rem;
 `;
 
-const IngredientWrapper = styled(Text)`
-  list-style-type: none;
+const IngredientWrapper = styled.ul`
+  list-style: none;
   padding: 0;
+  font-weight: 400;
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+`;
+
+const ImageWrapper = styled.div`
+  display: grid;
+  justify-items: right;
 `;
