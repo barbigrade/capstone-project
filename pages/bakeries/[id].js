@@ -14,13 +14,6 @@ export function getBakeryById(id) {
   return bakeries.bakeries.find((bakery) => bakery.id === id);
 }
 
-export function getAllProductMenus() {
-  const allProductMenus = bakeries.bakeries.map((bakeries) => {
-    return bakeries.productMenu;
-  });
-  return allProductMenus;
-}
-
 export function getStaticPaths() {
   const allBakeriesData = getAllBakeries();
   const paths = allBakeriesData.map((bakeries) => {
@@ -43,9 +36,10 @@ export function getStaticProps(context) {
 }
 
 export default function BakeryDetailPage({ bakeryData }) {
+  const productMenu = bakeryData.productMenu;
   return (
     <>
-      <BakeryContainer>
+      <BakeryContainerTop>
         <BakeryDetails
           image={bakeryData.image}
           name={bakeryData.name}
@@ -55,21 +49,33 @@ export default function BakeryDetailPage({ bakeryData }) {
           about={bakeryData.about}
           key={bakeryData.id}
         />
-      </BakeryContainer>
+      </BakeryContainerTop>
       <BakeryContainer>
-        <BakeryMenu
-          name={bakeryData.name}
-          ingredients={bakeryData.ingredients}
-          weight={bakeryData.weight}
-          cost={bakeryData.cost}
-          key={bakeryData.productId}
-        />
+        {productMenu.map((item) => (
+          <BakeryMenu
+            image={item.image}
+            name={item.name}
+            ingredients={item.ingredients.map((ingredient, index) => {
+              return <li key={index}>{ingredient}</li>;
+            })}
+            weight={item.weight}
+            cost={item.cost}
+            key={item.productId}
+          />
+        ))}
       </BakeryContainer>
     </>
   );
 }
 
 const BakeryContainer = styled.div`
+  display: grid;
+  gap: 1rem;
   margin: 0 auto;
+  padding-bottom: 1rem;
   width: 95vw;
+`;
+
+const BakeryContainerTop = styled(BakeryContainer)`
+  margin-bottom: 1rem;
 `;

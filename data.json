@@ -12,7 +12,7 @@
       "productMenu": [
         {
           "productId": "1",
-          "image": "/placeholder.jpg",
+          "image": "/2.jpg",
           "name": "Sourdough Loaf",
           "ingredients": ["80% Wheat", "15% Wholegrain Wheat"],
           "weight": "1000g",
@@ -21,7 +21,7 @@
         },
         {
           "productId": "2",
-          "image": "",
+          "image": "/2.jpg",
           "name": "Danish Rugbrød",
           "ingredients": ["80% Rye", "Pumpkin & Sesame Seeds"],
           "weight": "850g",
@@ -30,7 +30,7 @@
         },
         {
           "productId": "3",
-          "image": "",
+          "image": "/2.jpg",
           "name": "Frenchie",
           "ingredients": ["Italian Wheat & Spelt", "Butter"],
           "weight": "0",
@@ -39,7 +39,7 @@
         },
         {
           "productId": "4",
-          "image": "",
+          "image": "/2.jpg",
           "name": "Pain au Chocolat",
           "ingredients": ["Italian Wheat & Spelt", "Butter", "Chocolate (60%)"],
           "weight": "0",
