@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import BakeryDetails from '../../components/BakeryDetails';
+import BakeryMenu from '../../components/BakeryMenu';
 import bakeries from '../../data.json';
 
 export function getAllBakeries() {
@@ -35,22 +36,46 @@ export function getStaticProps(context) {
 }
 
 export default function BakeryDetailPage({ bakeryData }) {
+  const productMenu = bakeryData.productMenu;
   return (
-    <BakeryContainer>
-      <BakeryDetails
-        image={bakeryData.image}
-        name={bakeryData.name}
-        subtitle={bakeryData.subtitle}
-        score={bakeryData.score}
-        delivery={bakeryData.delivery}
-        about={bakeryData.about}
-        key={bakeryData.id}
-      />
-    </BakeryContainer>
+    <>
+      <BakeryContainerTop>
+        <BakeryDetails
+          image={bakeryData.image}
+          name={bakeryData.name}
+          subtitle={bakeryData.subtitle}
+          score={bakeryData.score}
+          delivery={bakeryData.delivery}
+          about={bakeryData.about}
+          key={bakeryData.id}
+        />
+      </BakeryContainerTop>
+      <BakeryContainer>
+        {productMenu.map((item) => (
+          <BakeryMenu
+            image={item.image}
+            name={item.name}
+            ingredients={item.ingredients.map((ingredient, index) => {
+              return <li key={index}>{ingredient}</li>;
+            })}
+            weight={item.weight}
+            cost={item.cost}
+            key={item.productId}
+          />
+        ))}
+      </BakeryContainer>
+    </>
   );
 }
 
 const BakeryContainer = styled.div`
+  display: grid;
+  gap: 1rem;
   margin: 0 auto;
+  padding-bottom: 1rem;
   width: 95vw;
+`;
+
+const BakeryContainerTop = styled(BakeryContainer)`
+  margin-bottom: 1rem;
 `;

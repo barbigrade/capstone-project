@@ -9,44 +9,44 @@
       "image": "/placeholder.jpg",
       "delivery": "Mon-Sun 08:00 - 18:00",
       "about": "Supporting small and local suppliers, we specialize in handmade sourdough bread, extending our offer with an ever-changing selection of sweet and savory pastries.",
-      "Menu": {
-        "Sourdough": {
+      "productMenu": [
+        {
           "productId": "1",
-          "image": "",
+          "image": "/2.jpg",
           "name": "Sourdough Loaf",
           "ingredients": ["80% Wheat", "15% Wholegrain Wheat"],
           "weight": "1000g",
           "cost": "€6.00",
           "category": ["bread", "sourdough"]
         },
-        "Danish Rye": {
+        {
           "productId": "2",
-          "image": "",
+          "image": "/2.jpg",
           "name": "Danish Rugbrød",
           "ingredients": ["80% Rye", "Pumpkin & Sesame Seeds"],
           "weight": "850g",
           "cost": "€4.50",
           "category": ["bread", "rye"]
         },
-        "Croissant": {
+        {
           "productId": "3",
-          "image": "",
+          "image": "/2.jpg",
           "name": "Frenchie",
           "ingredients": ["Italian Wheat & Spelt", "Butter"],
           "weight": "0",
           "cost": "€1.90",
           "category": ["pastry", "sweet", "croissant"]
         },
-        "Pain au Chocolat": {
+        {
           "productId": "4",
-          "image": "",
+          "image": "/2.jpg",
           "name": "Pain au Chocolat",
           "ingredients": ["Italian Wheat & Spelt", "Butter", "Chocolate (60%)"],
           "weight": "0",
           "cost": "€2.20",
           "category": ["pastry", "sweet", "chocolate"]
         }
-      }
+      ]
     },
     {
       "id": "2",
@@ -57,17 +57,17 @@
       "image": "/1.jpg",
       "delivery": "Mon-Sun 07:00 - 17:00",
       "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "Menu": {
-        "Italian Sourdough": {
+      "productMenu": [
+        {
           "productId": "5",
           "image": "",
           "name": "Italian Sourdough",
-          "ingredients": "100% Wheat",
+          "ingredients": ["100% Wheat"],
           "weight": "900g",
           "cost": "€5.50",
           "category": ["bread", "sourdough"]
         },
-        "House Baguette": {
+        {
           "productId": "6",
           "image": "",
           "name": "House Baguette",
@@ -76,7 +76,7 @@
           "cost": "€3.30",
           "category": ["bread", "baguette"]
         },
-        "Gluten-Free": {
+        {
           "productId": "7",
           "image": "",
           "name": "Gluten-Free Sourdough",
@@ -85,7 +85,7 @@
           "cost": "€4.50",
           "category": ["bread", "gluten-free", "sourdough"]
         },
-        "Holy Cannoli": {
+        {
           "productId": "8",
           "image": "",
           "name": "Holy Cannoli (2x)",
@@ -94,7 +94,7 @@
           "cost": "€2.50",
           "category": ["pastry", "sweet", "cannoli"]
         },
-        "Croissant": {
+        {
           "productId": "9",
           "image": "",
           "name": "Croissant",
@@ -103,7 +103,7 @@
           "cost": "€1.90",
           "category": ["pastry", "sweet", "croissant"]
         },
-        "Almond Croissant": {
+        {
           "productId": "10",
           "image": "",
           "name": "Almond Croissant",
@@ -112,7 +112,7 @@
           "cost": "€2.00",
           "category": ["pastry", "sweet", "croissant"]
         },
-        "Cinnamon Roll": {
+        {
           "productId": "11",
           "image": "",
           "name": "Cinnamon Roll",
@@ -121,7 +121,7 @@
           "cost": "€2.20",
           "category": ["pastry", "sweet"]
         }
-      }
+      ]
     },
     {
       "id": "3",
@@ -132,8 +132,8 @@
       "image": "/2.jpg",
       "delivery": "Mon-Sun 08:00 - 17:30",
       "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "Menu": {
-        "House Loaf": {
+      "productMenu": [
+        {
           "productId": "12",
           "image": "",
           "name": "House Loaf",
@@ -142,7 +142,7 @@
           "cost": "€3.50",
           "category": ["bread", "sourdough", "multigrain"]
         },
-        "Baguette": {
+        {
           "productId": "13",
           "image": "",
           "name": "Classic French Baguette",
@@ -151,7 +151,7 @@
           "cost": "€2.90",
           "category": ["bread", "baguette"]
         },
-        "Ciabatta": {
+        {
           "productId": "14",
           "image": "",
           "name": "Ciabatta",
@@ -160,7 +160,7 @@
           "cost": "€3.00",
           "category": ["bread", "ciabatta"]
         },
-        "Croissant": {
+        {
           "productId": "15",
           "image": "",
           "name": "Croissant",
@@ -169,7 +169,7 @@
           "cost": "€1.50",
           "category": ["pastry", "sweet", "croissant"]
         },
-        "Ham & Cheese Croissant": {
+        {
           "productId": "16",
           "image": "",
           "name": "Ham & Cheese Croissant",
@@ -178,7 +178,7 @@
           "cost": "€1.50",
           "category": ["pastry", "savory", "croissant"]
         },
-        "Pretzel": {
+        {
           "productId": "17",
           "image": "",
           "name": "Bavarian Lye Pretzel",
@@ -187,7 +187,7 @@
           "cost": "€1.20",
           "category": ["savory", "pretzel"]
         },
-        "Brownie": {
+        {
           "productId": "18",
           "image": "",
           "name": "King of Brownies",
@@ -201,7 +201,7 @@
           "cost": "€2.20",
           "category": ["pastry", "sweet", "brownie"]
         }
-      }
+      ]
     },
     {
       "id": "4",
@@ -212,8 +212,8 @@
       "image": "/3.jpg",
       "delivery": "Mon-Sun 07:00 - 18:00",
       "about": "Handmade with love and whole-grain spelt flour.",
-      "Menu": {
-        "Queen of Spelts": {
+      "productMenu": [
+        {
           "productId": "19",
           "image": "",
           "name": "Queen of Spelts",
@@ -225,16 +225,16 @@
           "cost": "€8.00",
           "category": ["bread", "spelt", "whole-grain"]
         },
-        "Spelt Baguette": {
+        {
           "productId": "20",
           "image": "",
           "name": "Baguette",
-          "ingredients": "50-50 Whole-Grain Spelt Blend",
+          "ingredients": ["50-50 Whole-Grain Spelt Blend"],
           "weight": "450g",
           "cost": "€4.80",
           "category": ["bread", "baguette", "spelt"]
         },
-        "Spelt Brioche": {
+        {
           "productId": "21",
           "image": "",
           "name": "Brioche",
@@ -243,7 +243,7 @@
           "cost": "€4.50",
           "category": ["bread", "sweet", "brioche", "spelt"]
         },
-        "Spelt Focaccia": {
+        {
           "productId": "22",
           "image": "",
           "name": "Focaccia",
@@ -257,7 +257,7 @@
           "cost": "€4.20",
           "category": ["bread", "savory", "focaccia", "spelt"]
         },
-        "Whole-Grain Spelt Croissant": {
+        {
           "productId": "23",
           "image": "",
           "name": "Whole-Grain Croissant",
@@ -266,7 +266,7 @@
           "cost": "€3.00",
           "category": ["pastry", "sweet", "croissant", "spelt"]
         },
-        "Spelt Pretzel": {
+        {
           "productId": "24",
           "image": "",
           "name": "The Bavarian",
@@ -275,7 +275,7 @@
           "cost": "€2.10",
           "category": ["savory", "pretzel", "spelt"]
         }
-      }
+      ]
     },
     {
       "id": "5",
@@ -286,17 +286,17 @@
       "image": "/4.jpg",
       "delivery": "Tue-Sun 08:00 - 18:00",
       "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "Menu": {
-        "House Sourdough Loaf": {
+      "productMenu": [
+        {
           "productId": "25",
           "image": "",
           "name": "House Sourdough Loaf",
-          "ingredients": "50-50 Whole-Grain Wheat Blend",
+          "ingredients": ["50-50 Whole-Grain Wheat Blend"],
           "weight": "900g",
           "cost": "€6.50",
           "category": ["bread", "sourdough", "whole-grain"]
         },
-        "Potato Loaf": {
+        {
           "productId": "26",
           "image": "",
           "name": "Potato Loaf",
@@ -305,7 +305,7 @@
           "cost": "€5.50",
           "category": ["bread", "potato"]
         },
-        "Brioche Rolls": {
+        {
           "productId": "27",
           "image": "",
           "name": "Brioche Rolls (4x)",
@@ -314,7 +314,7 @@
           "cost": "€2.70",
           "category": ["bread", "sweet", "brioche"]
         },
-        "Challah": {
+        {
           "productId": "28",
           "image": "",
           "name": "Challah Braid",
@@ -323,7 +323,7 @@
           "cost": "€3.70",
           "category": ["bread", "challah"]
         },
-        "Cornbread": {
+        {
           "productId": "29",
           "image": "",
           "name": "Cornbread",
@@ -332,7 +332,7 @@
           "cost": "€3.00",
           "category": ["bread", "cornbread"]
         },
-        "Olive & Feta Focaccia": {
+        {
           "productId": "30",
           "image": "",
           "name": "Olive & Feta Focaccia",
@@ -346,7 +346,7 @@
           "cost": "€3.50",
           "category": ["bread", "savory", "focaccia"]
         },
-        "Vegan Croissant": {
+        {
           "productId": "31",
           "image": "",
           "name": "Vegan Croissant",
@@ -355,7 +355,7 @@
           "cost": "€1.90",
           "category": ["pastry", "sweet", "croissant", "vegan"]
         },
-        "Vegan Pain au Chocolat": {
+        {
           "productId": "32",
           "image": "",
           "name": "Vegan Pain au Chocolat",
@@ -364,7 +364,7 @@
           "cost": "€2.10",
           "category": ["pastry", "sweet", "chocolate", "vegan"]
         }
-      }
+      ]
     },
     {
       "id": "6",
@@ -375,8 +375,8 @@
       "image": "/5.jpg",
       "delivery": "Mon-Sun 08:30 - 17:30",
       "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "Menu": {
-        "Sourdough": {
+      "productMenu": [
+        {
           "productId": "33",
           "image": "",
           "name": "Italian Sourdough Loaf",
@@ -385,7 +385,7 @@
           "cost": "€5.80",
           "category": ["bread", "sourdough"]
         },
-        "Irish Soda Bread": {
+        {
           "productId": "34",
           "image": "",
           "name": "Irish Soda Bread",
@@ -399,7 +399,7 @@
           "cost": "€5.30",
           "category": ["bread", "soda"]
         },
-        "French Baguette": {
+        {
           "productId": "35",
           "image": "",
           "name": "The French Classic",
@@ -408,16 +408,16 @@
           "cost": "€4.00",
           "category": ["bread", "baguette"]
         },
-        "German Pumpernickel": {
+        {
           "productId": "36",
           "image": "",
           "name": "German Pumpernickel",
-          "ingredients": "100% Rye",
+          "ingredients": ["100% Rye"],
           "weight": "600g",
           "cost": "€3.90",
           "category": ["bread", "rye", "pumpernickel", "sweet", "sourdough"]
         },
-        "Soft Potato Rolls": {
+        {
           "productId": "37",
           "image": "",
           "name": "Soft Potato Rolls (4x)",
@@ -426,7 +426,7 @@
           "cost": "€3.50",
           "category": ["bread", "potato"]
         },
-        "Walnut & Current Rolls": {
+        {
           "productId": "38",
           "image": "",
           "name": "Walnut & Current Sourdough Rolls (4x)",
@@ -438,7 +438,7 @@
           "cost": "€3.80",
           "category": ["bread", "nuts", "sweet", "sourdough"]
         },
-        "Croissant": {
+        {
           "productId": "39",
           "image": "",
           "name": "Croissant",
@@ -447,7 +447,7 @@
           "cost": "€1.70",
           "category": ["pastry", "sweet", "croissant"]
         },
-        "Queen-Amann": {
+        {
           "productId": "40",
           "image": "",
           "name": "Queen-Amann",
@@ -456,7 +456,7 @@
           "cost": "€2.40",
           "category": ["pastry", "sweet"]
         },
-        "Cheddar Knot": {
+        {
           "productId": "41",
           "image": "",
           "name": "Cheddar Knot",
@@ -465,7 +465,7 @@
           "cost": "€2.20",
           "category": ["pastry", "savory", "cheese"]
         },
-        "Bavarian Pretzel": {
+        {
           "productId": "42",
           "image": "",
           "name": "Bavarian Pretzel",
@@ -474,7 +474,7 @@
           "cost": "€1.60",
           "category": ["savory", "pretzel"]
         }
-      }
+      ]
     }
   ]
 }
