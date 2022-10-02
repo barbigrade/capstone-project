@@ -12,7 +12,13 @@ export default function BakeryDetails({
   return (
     <BakeryCard>
       <div>
-        <Image src={image} layout="responsive" width={300} height={200} />
+        <Image
+          alt=" "
+          src={image}
+          layout="responsive"
+          width={300}
+          height={200}
+        />
       </div>
       <h2>{name}</h2>
       <Subtitle>{subtitle}</Subtitle>
