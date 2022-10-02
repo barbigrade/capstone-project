@@ -27,7 +27,10 @@ export default function Home(props) {
         <h2>All Bakeries</h2>
         <BakeryList>
           {bakeries.map((bakery) => (
-            <Link href={`/bakeries/${encodeURIComponent(bakery.id)}`} passHref>
+            <Link
+              key={bakery.id}
+              href={`/bakeries/${encodeURIComponent(bakery.id)}`}
+            >
               <a>
                 <Bakery
                   name={bakery.name}
