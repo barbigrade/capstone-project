@@ -6,15 +6,21 @@ import Image from 'next/image';
 export default function BackButton({ linkTo }) {
   return (
     <Link href={linkTo}>
-      <a>
+      <AnchorTag>
         <Image
           alt="A go-back button"
-          src="../public/backbutton"
+          src="/backbutton.svg"
           layout="fixed"
           width={48}
           height={48}
         />
-      </a>
+      </AnchorTag>
     </Link>
   );
 }
+
+const AnchorTag = styled.a`
+  top: 0.6rem;
+  margin-left: 0.5rem;
+  position: absolute;
+`;
