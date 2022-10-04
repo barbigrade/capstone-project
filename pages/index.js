@@ -3,6 +3,7 @@ import Head from 'next/head';
 import fsPromises from 'fs/promises';
 import path from 'path';
 import Bakery from '../components/Bakery';
+import Link from 'next/link';
 
 export async function getStaticProps() {
   const filePath = path.join(process.cwd(), 'data.json');
@@ -26,13 +27,20 @@ export default function Home(props) {
         <h2>All Bakeries</h2>
         <BakeryList>
           {bakeries.map((bakery) => (
-            <Bakery
-              name={bakery.name}
-              subtitle={bakery.subtitle}
-              priceRange={bakery.priceRange}
-              score={bakery.score}
+            <Link
               key={bakery.id}
-            />
+              href={`/bakeries/${encodeURIComponent(bakery.id)}`}
+            >
+              <a>
+                <Bakery
+                  name={bakery.name}
+                  subtitle={bakery.subtitle}
+                  priceRange={bakery.priceRange}
+                  score={bakery.score}
+                  key={bakery.id}
+                />
+              </a>
+            </Link>
           ))}
         </BakeryList>
       </BakeryListContainer>
@@ -47,6 +55,24 @@ const BakeryListContainer = styled.div`
   h2 {
     font-weight: 400;
     margin: 1rem 0 0.7rem 0;
+  }
+
+  a {
+    text-decoration: none;
+    outline: none;
+  }
+
+  a:link {
+    color: #000000;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  a:active {
+    cursor: pointer;
   }
 `;
 
