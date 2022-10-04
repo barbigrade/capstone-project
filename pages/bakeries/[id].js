@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import BakeryDetails from '../../components/BakeryDetails';
 import BakeryMenu from '../../components/BakeryMenu';
 import bakeries from '../../data.json';
+import BackButton from '../../components/BackButton';
 
 export function getAllBakeries() {
   const allBakeries = bakeries.bakeries.map((bakeries) => {
@@ -40,6 +41,7 @@ export default function BakeryDetailPage({ bakeryData }) {
   return (
     <>
       <BakeryContainerTop>
+        <BackButton linkTo={'/'} />
         <BakeryDetails
           image={bakeryData.image}
           name={bakeryData.name}
