@@ -10,7 +10,13 @@ export default function PrimaryButton({ linkTo, text }) {
 }
 
 const StyledAnchor = styled.a`
-  color: white;
-  border: 1px solid white;
+  background-color: rgba(255, 105, 0, 0.99);
+  color: #ffffff;
   padding: 10px 15px;
+
+  :hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 105, 0, 1);
+  }
 `;

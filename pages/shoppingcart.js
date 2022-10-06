@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styled from 'styled-components';
 import PrimaryButton from '../components/PrimaryButton';
+import ShoppingCartCard from '../components/ShoppingCartCard';
 
 export default function ShoppingCartPage() {
   return (
@@ -15,6 +16,15 @@ export default function ShoppingCartPage() {
             height={2880}
           />
         </BackgroundImageWrapper>
+        <DescriptionWrapper>
+          <ShoppingCartCard
+            heading={'OH NO!'}
+            description={'Your basket is bread-less :('}
+            CTA={
+              'Channel your inner Parisian with a crisp baguette or a flaky croissant, browse our bakeries below!'
+            }
+          />
+        </DescriptionWrapper>
         <ButtonWrapper>
           <PrimaryButton linkTo={'/'} text={'Browse Bread'} />
         </ButtonWrapper>
@@ -33,6 +43,10 @@ const ButtonWrapper = styled.div`
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
+`;
+
+const DescriptionWrapper = styled(ButtonWrapper)`
+  top: 42%;
 `;
 
 const BackgroundImageWrapper = styled.div`
