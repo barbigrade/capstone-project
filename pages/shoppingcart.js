@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styled from 'styled-components';
-import BrowseButton from '../components/BrowseButton';
+import PrimaryButton from '../components/PrimaryButton';
 
 export default function ShoppingCartPage() {
   return (
@@ -16,7 +16,7 @@ export default function ShoppingCartPage() {
           />
         </BackgroundImageWrapper>
         <ButtonWrapper>
-          <BrowseButton linkTo={'/'} />
+          <PrimaryButton linkTo={'/'} text={'Browse Bread'} />
         </ButtonWrapper>
       </ShoppingCartWrapper>
     </>

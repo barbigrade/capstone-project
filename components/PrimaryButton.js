@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import styled from 'styled-components';
 
-export default function BrowseButton({ linkTo }) {
+export default function PrimaryButton({ linkTo, text }) {
   return (
     <Link href={linkTo}>
-      <StyledAnchor>Browse Bread</StyledAnchor>
+      <StyledAnchor>{text}</StyledAnchor>
     </Link>
   );
 }
