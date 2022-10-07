@@ -5,31 +5,29 @@ import ShoppingCartCard from '../components/ShoppingCartCard';
 
 export default function ShoppingCartPage() {
   return (
-    <>
-      <ShoppingCartWrapper>
-        <BackgroundImageWrapper>
-          <Image
-            alt=" "
-            src="/shoppingcartbackground2.jpg"
-            layout="responsive"
-            width={1920}
-            height={2880}
-          />
-        </BackgroundImageWrapper>
-        <DescriptionWrapper>
-          <ShoppingCartCard
-            heading={'OH NO!'}
-            description={'Your basket is bread-less :('}
-            CTA={
-              'Channel your inner Parisian with a crisp baguette or a flaky croissant, browse our bakeries below!'
-            }
-          />
-        </DescriptionWrapper>
-        <ButtonWrapper>
-          <PrimaryButton linkTo={'/'} text={'Browse Bread'} />
-        </ButtonWrapper>
-      </ShoppingCartWrapper>
-    </>
+    <ShoppingCartWrapper>
+      <BackgroundImageWrapper>
+        <Image
+          alt=" "
+          src="/shoppingcartbackground2.jpg"
+          layout="responsive"
+          width={1920}
+          height={2880}
+        />
+      </BackgroundImageWrapper>
+      <DescriptionWrapper>
+        <ShoppingCartCard
+          heading={'OH NO!'}
+          description={'Your basket is bread-less :('}
+          CTA={
+            'Channel your inner Parisian with a crisp baguette or a flaky croissant, browse our bakeries below!'
+          }
+        />
+      </DescriptionWrapper>
+      <ButtonWrapper>
+        <PrimaryButton linkTo={'/'} text={'Browse Bread'} />
+      </ButtonWrapper>
+    </ShoppingCartWrapper>
   );
 }
 

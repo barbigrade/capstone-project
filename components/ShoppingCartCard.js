@@ -6,7 +6,7 @@ export default function ShoppingCartCard({ heading, description, CTA }) {
     <ShoppingCartWrapper>
       <Heading>{heading}</Heading>
       <Image
-        alt=" "
+        alt="Shopping cart icon"
         src="/shoppingbasket.svg"
         layout="fixed"
         width={48}
