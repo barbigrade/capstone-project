@@ -3,8 +3,13 @@ import styled from 'styled-components';
 import Image from 'next/image';
 
 export default function BakeryMenu({ image, name, ingredients, weight, cost }) {
+  const [showHiddenOptions, setShowHiddenOptions] = useState(false);
+
+  function toggleHiddenOptions() {
+    setShowHiddenOptions(!showHiddenOptions);
+  }
   return (
-    <MenuCard>
+    <MenuCard onClick={toggleHiddenOptions}>
       <TextWrapper>
         <h4>{name}</h4>
         <IngredientWrapper>{ingredients}</IngredientWrapper>
@@ -14,7 +19,10 @@ export default function BakeryMenu({ image, name, ingredients, weight, cost }) {
       <ImageWrapper>
         <Image src={image} layout="fixed" width={135} height={135} />
       </ImageWrapper>
-      <HiddenOptions>
+      <HiddenOptions
+        showHiddenOptions={showHiddenOptions}
+        style={{ display: showHiddenOptions ? ' ' : 'none' }}
+      >
         <AddToBasketButton>Add to Basket</AddToBasketButton>
       </HiddenOptions>
     </MenuCard>
