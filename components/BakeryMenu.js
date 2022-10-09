@@ -19,11 +19,10 @@ export default function BakeryMenu({ image, name, ingredients, weight, cost }) {
       <ImageWrapper>
         <Image src={image} layout="fixed" width={135} height={135} />
       </ImageWrapper>
-      <HiddenOptions
-        showHiddenOptions={showHiddenOptions}
-        style={{ display: showHiddenOptions ? ' ' : 'none' }}
-      >
-        <AddToBasketButton>Add to Basket</AddToBasketButton>
+      <HiddenOptions>
+        {showHiddenOptions && (
+          <AddToBasketButton>Add to Basket</AddToBasketButton>
+        )}
       </HiddenOptions>
     </MenuCard>
   );
