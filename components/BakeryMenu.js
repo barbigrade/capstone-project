@@ -1,9 +1,15 @@
+import { useState } from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
 
 export default function BakeryMenu({ image, name, ingredients, weight, cost }) {
+  const [showHiddenOptions, setShowHiddenOptions] = useState(false);
+
+  function toggleHiddenOptions() {
+    setShowHiddenOptions(!showHiddenOptions);
+  }
   return (
-    <MenuCard>
+    <MenuCard onClick={toggleHiddenOptions}>
       <TextWrapper>
         <h4>{name}</h4>
         <IngredientWrapper>{ingredients}</IngredientWrapper>
@@ -13,6 +19,11 @@ export default function BakeryMenu({ image, name, ingredients, weight, cost }) {
       <ImageWrapper>
         <Image src={image} layout="fixed" width={135} height={135} />
       </ImageWrapper>
+      <HiddenOptions>
+        {showHiddenOptions && (
+          <AddToBasketButton>Add to Basket</AddToBasketButton>
+        )}
+      </HiddenOptions>
     </MenuCard>
   );
 }
@@ -56,4 +67,17 @@ const IngredientWrapper = styled.ul`
 const ImageWrapper = styled.div`
   display: grid;
   justify-items: right;
+`;
+
+const HiddenOptions = styled.div`
+  margin-top: 0.5rem;
+`;
+
+const AddToBasketButton = styled.button`
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  padding: 10px 15px;
 `;
