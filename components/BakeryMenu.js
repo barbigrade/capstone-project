@@ -8,6 +8,11 @@ export default function BakeryMenu({ image, name, ingredients, weight, cost }) {
   function toggleHiddenOptions() {
     setShowHiddenOptions(!showHiddenOptions);
   }
+
+  function addToCart() {
+    console.log('add item to cart');
+  }
+
   return (
     <MenuCard onClick={toggleHiddenOptions}>
       <TextWrapper>
@@ -21,7 +26,9 @@ export default function BakeryMenu({ image, name, ingredients, weight, cost }) {
       </ImageWrapper>
       <HiddenOptions>
         {showHiddenOptions && (
-          <AddToBasketButton>Add to Basket</AddToBasketButton>
+          <AddToBasketButton onClick={addToCart}>
+            Add to Basket
+          </AddToBasketButton>
         )}
       </HiddenOptions>
     </MenuCard>
