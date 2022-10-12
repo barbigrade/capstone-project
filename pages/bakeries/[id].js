@@ -50,12 +50,12 @@ export default function BakeryDetailPage({ bakeryData }) {
       setCart(
         cart.map((cartItem) =>
           cartItem.productId === existingCartItem
-            ? { ...existingCartItem, count: existingCartItem.count + 1 }
+            ? { ...existingCartItem }
             : cartItem
         )
       );
     } else {
-      setCart([...cart, { ...item, count: 1 }]);
+      setCart([...cart, { ...item }]);
     }
   }
 

@@ -30,7 +30,7 @@ export default function BakeryMenu({
       </ImageWrapper>
       <HiddenOptions>
         {showHiddenOptions && (
-          <AddToBasketButton type="submit" onClick={() => onAddToCart(product)}>
+          <AddToBasketButton onClick={() => onAddToCart(product)}>
             Add to Basket
           </AddToBasketButton>
         )}
