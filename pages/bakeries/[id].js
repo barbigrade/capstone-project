@@ -40,6 +40,26 @@ export function getStaticProps(context) {
 export default function BakeryDetailPage({ bakeryData }) {
   const productMenu = bakeryData.productMenu;
 
+  const [cart, setCart] = useLocalStorage('_cart', []);
+
+  function addToCart(item) {
+    // console.log(item);
+    const existingCartItem = cart.find(
+      (cartItem) => cartItem.productId === item.productId
+    );
+    if (existingCartItem) {
+      setCart(
+        cart.map((cartItem) =>
+          cartItem.productId === existingCartItem
+            ? { ...existingCartItem, count: existingCartItem.count + 1 }
+            : cartItem
+        )
+      );
+    } else {
+      setCart([...cart, { ...item, count: 1 }]);
+    }
+  }
+
   return (
     <>
       <BakeryContainerTop>
@@ -59,13 +79,15 @@ export default function BakeryDetailPage({ bakeryData }) {
           <BakeryMenu
             image={item.image}
             name={item.name}
+            product={item}
             ingredients={item.ingredients.map((ingredient, index) => {
               return <li key={index}>{ingredient}</li>;
             })}
             weight={item.weight}
             cost={item.cost}
-            product={item}
+            productId={item.productId}
             key={item.productId}
+            onAddToCart={addToCart}
           />
         ))}
       </BakeryContainer>

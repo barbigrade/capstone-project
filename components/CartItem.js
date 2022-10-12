@@ -1,7 +1,15 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 
-export default function CartItem({ image, name, cost, ingredients, weight }) {
+export default function CartItem({
+  image,
+  name,
+  cost,
+  ingredients,
+  weight,
+  productId,
+  onRemoveFromCart,
+}) {
   return (
     <CartItemWrapper>
       <TextWrapper>
@@ -13,6 +21,11 @@ export default function CartItem({ image, name, cost, ingredients, weight }) {
       <ImageWrapper>
         <Image src={image} layout="fixed" width={135} height={135} />
       </ImageWrapper>
+      <ButtonWrapper>
+        <RemoveFromBasketButton onClick={() => onRemoveFromCart(productId)}>
+          Remove from Basket
+        </RemoveFromBasketButton>
+      </ButtonWrapper>
     </CartItemWrapper>
   );
 }
@@ -56,4 +69,17 @@ const IngredientWrapper = styled.ul`
 const ImageWrapper = styled.div`
   display: grid;
   justify-items: right;
+`;
+
+const ButtonWrapper = styled.div`
+  margin-top: 0.5rem;
+`;
+
+const RemoveFromBasketButton = styled.button`
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  padding: 10px 15px;
 `;
