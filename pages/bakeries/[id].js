@@ -43,7 +43,6 @@ export default function BakeryDetailPage({ bakeryData }) {
   const [cart, setCart] = useLocalStorage('_cart', []);
 
   function addToCart(item) {
-    // console.log(item);
     const existingCartItem = cart.find(
       (cartItem) => cartItem.productId === item.productId
     );

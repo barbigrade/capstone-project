@@ -11,7 +11,7 @@ export default function ShoppingCartPage() {
   function removeFromCart(productId) {
     setCart(cart.filter((cartItem) => cartItem.productId !== productId));
   }
-  // console.log(cart);
+
   return (
     <>
       {cart.length > 0 && (
