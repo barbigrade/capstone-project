@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 
-export default function useLocalStorage(key, selection) {
-  const [stateValue, setStateValue] = useState(selection);
+export default function useLocalStorage(key, initialState) {
+  const [stateValue, setStateValue] = useState(initialState);
 
   const setStateAndUpdateLocalStorage = useCallback(
     (value) => {

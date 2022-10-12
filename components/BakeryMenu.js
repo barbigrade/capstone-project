@@ -1,16 +1,39 @@
 import { useState } from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
+import useLocalStorage from '../hooks/useLocalStorage';
 
-export default function BakeryMenu({ image, name, ingredients, weight, cost }) {
+export default function BakeryMenu({
+  image,
+  name,
+  ingredients,
+  weight,
+  cost,
+  product,
+}) {
   const [showHiddenOptions, setShowHiddenOptions] = useState(false);
+  const [cart, setCart] = useLocalStorage('_cart', []);
+
+  function addToCart(item) {
+    // console.log(item);
+    const existingCartItem = cart.find(
+      (cartItem) => cartItem.productId === item.productId
+    );
+    if (existingCartItem) {
+      setCart(
+        cart.map((cartItem) =>
+          cartItem.productId === existingCartItem
+            ? { ...existingCartItem, count: existingCartItem.count + 1 }
+            : cartItem
+        )
+      );
+    } else {
+      setCart([...cart, { ...item, count: 1 }]);
+    }
+  }
 
   function toggleHiddenOptions() {
     setShowHiddenOptions(!showHiddenOptions);
-  }
-
-  function addToCart() {
-    console.log('add item to cart');
   }
 
   return (
@@ -26,7 +49,7 @@ export default function BakeryMenu({ image, name, ingredients, weight, cost }) {
       </ImageWrapper>
       <HiddenOptions>
         {showHiddenOptions && (
-          <AddToBasketButton onClick={addToCart}>
+          <AddToBasketButton type="submit" onClick={() => addToCart(product)}>
             Add to Basket
           </AddToBasketButton>
         )}

@@ -2,31 +2,27 @@ import Image from 'next/image';
 import styled from 'styled-components';
 import PrimaryButton from '../components/PrimaryButton';
 import ShoppingCartCard from '../components/ShoppingCartCard';
+import useLocalStorage from '../hooks/useLocalStorage';
+import CartItem from '../components/CartItem';
 
 export default function ShoppingCartPage() {
+  const [cart] = useLocalStorage('_cart', []);
+  console.log(cart);
   return (
     <ShoppingCartWrapper>
-      <BackgroundImageWrapper>
-        <Image
-          alt=" "
-          src="/shoppingcartbackground2.jpg"
-          layout="responsive"
-          width={1920}
-          height={2880}
+      {cart.map((item) => (
+        <CartItem
+          image={item.image}
+          name={item.name}
+          ingredients={item.ingredients.map((ingredient, index) => {
+            return <li key={index}>{ingredient}</li>;
+          })}
+          weight={item.weight}
+          cost={item.cost}
+          product={item}
+          key={item.productId}
         />
-      </BackgroundImageWrapper>
-      <DescriptionWrapper>
-        <ShoppingCartCard
-          heading={'OH NO!'}
-          description={'Your basket is bread-less :('}
-          CTA={
-            'Channel your inner Parisian with a crisp baguette or a flaky croissant, browse our bakeries below!'
-          }
-        />
-      </DescriptionWrapper>
-      <ButtonWrapper>
-        <PrimaryButton linkTo={'/'} text={'Browse Bread'} />
-      </ButtonWrapper>
+      ))}
     </ShoppingCartWrapper>
   );
 }

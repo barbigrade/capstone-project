@@ -3,6 +3,7 @@ import BakeryDetails from '../../components/BakeryDetails';
 import BakeryMenu from '../../components/BakeryMenu';
 import bakeries from '../../data.json';
 import BackButton from '../../components/BackButton';
+import useLocalStorage from '../../hooks/useLocalStorage';
 
 export function getAllBakeries() {
   const allBakeries = bakeries.bakeries.map((bakeries) => {
@@ -38,6 +39,7 @@ export function getStaticProps(context) {
 
 export default function BakeryDetailPage({ bakeryData }) {
   const productMenu = bakeryData.productMenu;
+
   return (
     <>
       <BakeryContainerTop>
@@ -62,6 +64,7 @@ export default function BakeryDetailPage({ bakeryData }) {
             })}
             weight={item.weight}
             cost={item.cost}
+            product={item}
             key={item.productId}
           />
         ))}
