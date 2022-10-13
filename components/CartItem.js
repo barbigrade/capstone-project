@@ -1,24 +1,17 @@
-import { useState } from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
 
-export default function BakeryMenu({
+export default function CartItem({
   image,
   name,
+  cost,
   ingredients,
   weight,
-  cost,
-  product,
-  onAddToCart,
+  productId,
+  onRemoveFromCart,
 }) {
-  const [showHiddenOptions, setShowHiddenOptions] = useState(false);
-
-  function toggleHiddenOptions() {
-    setShowHiddenOptions(!showHiddenOptions);
-  }
-
   return (
-    <MenuCard onClick={toggleHiddenOptions}>
+    <CartItemWrapper>
       <TextWrapper>
         <h4>{name}</h4>
         <IngredientWrapper>{ingredients}</IngredientWrapper>
@@ -28,18 +21,16 @@ export default function BakeryMenu({
       <ImageWrapper>
         <Image src={image} layout="fixed" width={135} height={135} />
       </ImageWrapper>
-      <HiddenOptions>
-        {showHiddenOptions && (
-          <AddToBasketButton onClick={() => onAddToCart(product)}>
-            Add to Basket
-          </AddToBasketButton>
-        )}
-      </HiddenOptions>
-    </MenuCard>
+      <ButtonWrapper>
+        <RemoveFromBasketButton onClick={() => onRemoveFromCart(productId)}>
+          Remove from Basket
+        </RemoveFromBasketButton>
+      </ButtonWrapper>
+    </CartItemWrapper>
   );
 }
 
-const MenuCard = styled.div`
+const CartItemWrapper = styled.div`
   border: 1px dashed #000000;
   display: grid;
   grid-template-columns: 60% 40%;
@@ -80,11 +71,11 @@ const ImageWrapper = styled.div`
   justify-items: right;
 `;
 
-const HiddenOptions = styled.div`
+const ButtonWrapper = styled.div`
   margin-top: 0.5rem;
 `;
 
-const AddToBasketButton = styled.button`
+const RemoveFromBasketButton = styled.button`
   background-color: #ffffff;
   border: 1px solid #000000;
   color: #000000;

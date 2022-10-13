@@ -3,6 +3,7 @@ import BakeryDetails from '../../components/BakeryDetails';
 import BakeryMenu from '../../components/BakeryMenu';
 import bakeries from '../../data.json';
 import BackButton from '../../components/BackButton';
+import useLocalStorage from '../../hooks/useLocalStorage';
 
 export function getAllBakeries() {
   const allBakeries = bakeries.bakeries.map((bakeries) => {
@@ -38,6 +39,26 @@ export function getStaticProps(context) {
 
 export default function BakeryDetailPage({ bakeryData }) {
   const productMenu = bakeryData.productMenu;
+
+  const [cart, setCart] = useLocalStorage('_cart', []);
+
+  function addToCart(item) {
+    const existingCartItem = cart.find(
+      (cartItem) => cartItem.productId === item.productId
+    );
+    if (existingCartItem) {
+      setCart(
+        cart.map((cartItem) =>
+          cartItem.productId === existingCartItem
+            ? { ...existingCartItem }
+            : cartItem
+        )
+      );
+    } else {
+      setCart([...cart, { ...item }]);
+    }
+  }
+
   return (
     <>
       <BakeryContainerTop>
@@ -57,12 +78,15 @@ export default function BakeryDetailPage({ bakeryData }) {
           <BakeryMenu
             image={item.image}
             name={item.name}
+            product={item}
             ingredients={item.ingredients.map((ingredient, index) => {
               return <li key={index}>{ingredient}</li>;
             })}
             weight={item.weight}
             cost={item.cost}
+            productId={item.productId}
             key={item.productId}
+            onAddToCart={addToCart}
           />
         ))}
       </BakeryContainer>
