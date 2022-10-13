@@ -23,7 +23,7 @@ export default function BakeryMenu({
         <h4>{name}</h4>
         <IngredientWrapper>{ingredients}</IngredientWrapper>
         <Text>{weight}</Text>
-        <Text className="cost">€{cost}</Text>
+        <Text className="cost">{cost}</Text>
       </TextWrapper>
       <ImageWrapper>
         <Image src={image} layout="fixed" width={135} height={135} />

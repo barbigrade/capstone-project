@@ -82,7 +82,7 @@ export default function BakeryDetailPage({ bakeryData }) {
             ingredients={item.ingredients.map((ingredient, index) => {
               return <li key={index}>{ingredient}</li>;
             })}
-            weight={item.weight}
+            weight={item.weight !== '0' ? `${item.weight} ` : ''}
             cost={item.cost}
             productId={item.productId}
             key={item.productId}
