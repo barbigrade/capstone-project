@@ -135,7 +135,7 @@
       "productMenu": [
         {
           "productId": "12",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/v1665654174/capstone-project/pexels-lisa-fotios-7608269_ezqdgr.jpg",
           "name": "House Loaf",
           "ingredients": ["80% Wheat", "20% Rye", "Sunflower Seeds"],
           "weight": "1000g",
