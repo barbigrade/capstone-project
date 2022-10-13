@@ -17,6 +17,7 @@ export default function ShoppingCartPage() {
     <>
       {cart.length > 0 && (
         <ShoppingCartWrapper>
+          <ShoppingCartHeader>Bread Basket</ShoppingCartHeader>
           <BackButton linkTo={'/'} />
           {cart.map((item) => (
             <CartItem
@@ -40,10 +41,10 @@ export default function ShoppingCartPage() {
           <BackgroundImageWrapper>
             <Image
               alt=" "
-              src="/shoppingcartbackground2.jpg"
+              src="https://res.cloudinary.com/drthrskm2/image/upload/c_limit,h_1792,w_828/v1665659203/capstone-project/bakery%20overviews/shoppingcartbackground2_vxwbau.jpg"
               layout="responsive"
-              width={1920}
-              height={2880}
+              width={828}
+              height={1792}
             />
           </BackgroundImageWrapper>
           <DescriptionWrapper>
@@ -64,12 +65,18 @@ export default function ShoppingCartPage() {
   );
 }
 
+const ShoppingCartHeader = styled.h2`
+  font-weight: 400;
+  margin: 2rem 0 0 0;
+`;
+
 const ShoppingCartWrapper = styled.div`
   display: grid;
   gap: 1rem;
   margin: 0 auto;
   padding-bottom: 1rem;
   width: 95vw;
+  max-width: 40rem;
 `;
 
 const EmptyShoppingCartWrapper = styled(ShoppingCartWrapper)`

@@ -51,6 +51,7 @@ export default function Home(props) {
 const BakeryListContainer = styled.div`
   margin: 0 auto;
   width: 85vw;
+  max-width: 40rem;
 
   h2 {
     font-weight: 400;
