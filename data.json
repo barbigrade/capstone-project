@@ -16,7 +16,7 @@
           "name": "Sourdough Loaf",
           "ingredients": ["80% Wheat", "15% Wholegrain Wheat"],
           "weight": "1000g",
-          "cost": "€6.00",
+          "cost": "6.00",
           "category": ["bread", "sourdough"]
         },
         {
@@ -25,7 +25,7 @@
           "name": "Danish Rugbrød",
           "ingredients": ["80% Rye", "Pumpkin & Sesame Seeds"],
           "weight": "850g",
-          "cost": "€4.50",
+          "cost": "4.50",
           "category": ["bread", "rye"]
         },
         {
@@ -34,7 +34,7 @@
           "name": "Frenchie",
           "ingredients": ["Italian Wheat & Spelt", "Butter"],
           "weight": "0",
-          "cost": "€1.90",
+          "cost": "1.90",
           "category": ["pastry", "sweet", "croissant"]
         },
         {
@@ -43,7 +43,7 @@
           "name": "Pain au Chocolat",
           "ingredients": ["Italian Wheat & Spelt", "Butter", "Chocolate (60%)"],
           "weight": "0",
-          "cost": "€2.20",
+          "cost": "2.20",
           "category": ["pastry", "sweet", "chocolate"]
         }
       ]
@@ -64,7 +64,7 @@
           "name": "Italian Sourdough",
           "ingredients": ["100% Wheat"],
           "weight": "900g",
-          "cost": "€5.50",
+          "cost": "5.50",
           "category": ["bread", "sourdough"]
         },
         {
@@ -73,7 +73,7 @@
           "name": "House Baguette",
           "ingredients": ["70% Wheat", "15% Spelt", "15% Rye"],
           "weight": "450g",
-          "cost": "€3.30",
+          "cost": "3.30",
           "category": ["bread", "baguette"]
         },
         {
@@ -82,7 +82,7 @@
           "name": "Gluten-Free Sourdough",
           "ingredients": ["Buckwheat & Brown Rice Blend", "Pumpkin Seeds"],
           "weight": "800g",
-          "cost": "€4.50",
+          "cost": "4.50",
           "category": ["bread", "gluten-free", "sourdough"]
         },
         {
@@ -91,7 +91,7 @@
           "name": "Holy Cannoli (2x)",
           "ingredients": ["100% Wheat", "Egg", "Ricotta"],
           "weight": "0",
-          "cost": "€2.50",
+          "cost": "2.50",
           "category": ["pastry", "sweet", "cannoli"]
         },
         {
@@ -100,7 +100,7 @@
           "name": "Croissant",
           "ingredients": ["Italian Wheat & Spelt", "Butter"],
           "weight": "0",
-          "cost": "€1.90",
+          "cost": "1.90",
           "category": ["pastry", "sweet", "croissant"]
         },
         {
@@ -109,7 +109,7 @@
           "name": "Almond Croissant",
           "ingredients": ["Italian Wheat", "Butter", "Sweet Almond Paste"],
           "weight": "0",
-          "cost": "€2.00",
+          "cost": "2.00",
           "category": ["pastry", "sweet", "croissant"]
         },
         {
@@ -118,7 +118,7 @@
           "name": "Cinnamon Roll",
           "ingredients": ["100% Wheat", "Butter & Cinnamon Paste"],
           "weight": "0",
-          "cost": "€2.20",
+          "cost": "2.20",
           "category": ["pastry", "sweet"]
         }
       ]
@@ -139,7 +139,7 @@
           "name": "House Loaf",
           "ingredients": ["80% Wheat", "20% Rye", "Sunflower Seeds"],
           "weight": "1000g",
-          "cost": "€3.50",
+          "cost": "3.50",
           "category": ["bread", "sourdough", "multigrain"]
         },
         {
@@ -148,7 +148,7 @@
           "name": "Classic French Baguette",
           "ingredients": ["90% Wheat", "10% Spelt"],
           "weight": "400g",
-          "cost": "€2.90",
+          "cost": "2.90",
           "category": ["bread", "baguette"]
         },
         {
@@ -157,7 +157,7 @@
           "name": "Ciabatta",
           "ingredients": ["80% Wheat", "20% Whole-Wheat"],
           "weight": "450g",
-          "cost": "€3.00",
+          "cost": "3.00",
           "category": ["bread", "ciabatta"]
         },
         {
@@ -166,7 +166,7 @@
           "name": "Croissant",
           "ingredients": ["100% Wheat", "Butter"],
           "weight": "0",
-          "cost": "€1.50",
+          "cost": "1.50",
           "category": ["pastry", "sweet", "croissant"]
         },
         {
@@ -175,7 +175,7 @@
           "name": "Ham & Cheese Croissant",
           "ingredients": ["100% Wheat", "Butter", "Ham", "Cheese"],
           "weight": "0",
-          "cost": "€1.50",
+          "cost": "1.50",
           "category": ["pastry", "savory", "croissant"]
         },
         {
@@ -184,7 +184,7 @@
           "name": "Bavarian Lye Pretzel",
           "ingredients": ["100% Wheat", "Yeast", "Salt"],
           "weight": "0",
-          "cost": "€1.20",
+          "cost": "1.20",
           "category": ["savory", "pretzel"]
         },
         {
@@ -198,7 +198,7 @@
             "Dark Chocolate (70%)"
           ],
           "weight": "0",
-          "cost": "€2.20",
+          "cost": "2.20",
           "category": ["pastry", "sweet", "brownie"]
         }
       ]
@@ -222,7 +222,7 @@
             "Sunflower, Pumpkin & Flaxseed"
           ],
           "weight": "1000g",
-          "cost": "€8.00",
+          "cost": "8.00",
           "category": ["bread", "spelt", "whole-grain"]
         },
         {
@@ -231,7 +231,7 @@
           "name": "Baguette",
           "ingredients": ["50-50 Whole-Grain Spelt Blend"],
           "weight": "450g",
-          "cost": "€4.80",
+          "cost": "4.80",
           "category": ["bread", "baguette", "spelt"]
         },
         {
@@ -240,7 +240,7 @@
           "name": "Brioche",
           "ingredients": ["50-50 Whole-Grain Spelt Blend", "Yeast"],
           "weight": "400g",
-          "cost": "€4.50",
+          "cost": "4.50",
           "category": ["bread", "sweet", "brioche", "spelt"]
         },
         {
@@ -254,7 +254,7 @@
             "Extra Virgin Olive Oil"
           ],
           "weight": "0",
-          "cost": "€4.20",
+          "cost": "4.20",
           "category": ["bread", "savory", "focaccia", "spelt"]
         },
         {
@@ -263,7 +263,7 @@
           "name": "Whole-Grain Croissant",
           "ingredients": ["100% Whole-Grain Spelt", "Butter"],
           "weight": "0",
-          "cost": "€3.00",
+          "cost": "3.00",
           "category": ["pastry", "sweet", "croissant", "spelt"]
         },
         {
@@ -272,7 +272,7 @@
           "name": "The Bavarian",
           "ingredients": ["50-50 Whole-Grain Spelt Blend", "Yeast", "Salt"],
           "weight": "0",
-          "cost": "€2.10",
+          "cost": "2.10",
           "category": ["savory", "pretzel", "spelt"]
         }
       ]
@@ -293,7 +293,7 @@
           "name": "House Sourdough Loaf",
           "ingredients": ["50-50 Whole-Grain Wheat Blend"],
           "weight": "900g",
-          "cost": "€6.50",
+          "cost": "6.50",
           "category": ["bread", "sourdough", "whole-grain"]
         },
         {
@@ -302,7 +302,7 @@
           "name": "Potato Loaf",
           "ingredients": ["50-50 Potato-Wheat Blend", "Yeast"],
           "weight": "800g",
-          "cost": "€5.50",
+          "cost": "5.50",
           "category": ["bread", "potato"]
         },
         {
@@ -311,7 +311,7 @@
           "name": "Brioche Rolls (4x)",
           "ingredients": ["100% Wheat", "Yeast", "Sugar"],
           "weight": "0",
-          "cost": "€2.70",
+          "cost": "2.70",
           "category": ["bread", "sweet", "brioche"]
         },
         {
@@ -320,7 +320,7 @@
           "name": "Challah Braid",
           "ingredients": ["100% Wheat", "Yeast", "Eggs"],
           "weight": "0",
-          "cost": "€3.70",
+          "cost": "3.70",
           "category": ["bread", "challah"]
         },
         {
@@ -329,7 +329,7 @@
           "name": "Cornbread",
           "ingredients": ["50-50 Wheat-Polenta Blend", "Eggs", "Buttermilk"],
           "weight": "350g",
-          "cost": "€3.00",
+          "cost": "3.00",
           "category": ["bread", "cornbread"]
         },
         {
@@ -343,7 +343,7 @@
             "Extra Virgin Olive Oil"
           ],
           "weight": "0",
-          "cost": "€3.50",
+          "cost": "3.50",
           "category": ["bread", "savory", "focaccia"]
         },
         {
@@ -352,7 +352,7 @@
           "name": "Vegan Croissant",
           "ingredients": ["100% Wheat", "Vegan Butter"],
           "weight": "0",
-          "cost": "€1.90",
+          "cost": "1.90",
           "category": ["pastry", "sweet", "croissant", "vegan"]
         },
         {
@@ -361,7 +361,7 @@
           "name": "Vegan Pain au Chocolat",
           "ingredients": ["100% Wheat", "Dark Chocolate (60%)"],
           "weight": "0",
-          "cost": "€2.10",
+          "cost": "2.10",
           "category": ["pastry", "sweet", "chocolate", "vegan"]
         }
       ]
@@ -382,7 +382,7 @@
           "name": "Italian Sourdough Loaf",
           "ingredients": ["80% Italian Wheat", "20% Rye"],
           "weight": "1000g",
-          "cost": "€5.80",
+          "cost": "5.80",
           "category": ["bread", "sourdough"]
         },
         {
@@ -396,7 +396,7 @@
             "Butter"
           ],
           "weight": "900g",
-          "cost": "€5.30",
+          "cost": "5.30",
           "category": ["bread", "soda"]
         },
         {
@@ -405,7 +405,7 @@
           "name": "The French Classic",
           "ingredients": ["100% Wheat"],
           "weight": "450g",
-          "cost": "€4.00",
+          "cost": "4.00",
           "category": ["bread", "baguette"]
         },
         {
@@ -414,7 +414,7 @@
           "name": "German Pumpernickel",
           "ingredients": ["100% Rye"],
           "weight": "600g",
-          "cost": "€3.90",
+          "cost": "3.90",
           "category": ["bread", "rye", "pumpernickel", "sweet", "sourdough"]
         },
         {
@@ -423,7 +423,7 @@
           "name": "Soft Potato Rolls (4x)",
           "ingredients": ["50-50 Potato-Spelt Blend", "Yeast"],
           "weight": "400g",
-          "cost": "€3.50",
+          "cost": "3.50",
           "category": ["bread", "potato"]
         },
         {
@@ -435,7 +435,7 @@
             "15% Walnuts & Dried Currents"
           ],
           "weight": "450g",
-          "cost": "€3.80",
+          "cost": "3.80",
           "category": ["bread", "nuts", "sweet", "sourdough"]
         },
         {
@@ -444,7 +444,7 @@
           "name": "Croissant",
           "ingredients": ["100% Wheat", "Butter"],
           "weight": "0",
-          "cost": "€1.70",
+          "cost": "1.70",
           "category": ["pastry", "sweet", "croissant"]
         },
         {
@@ -453,7 +453,7 @@
           "name": "Queen-Amann",
           "ingredients": ["100% Wheat", "Butter", "Sugar & Maldon Salt"],
           "weight": "0",
-          "cost": "€2.40",
+          "cost": "2.40",
           "category": ["pastry", "sweet"]
         },
         {
@@ -462,7 +462,7 @@
           "name": "Cheddar Knot",
           "ingredients": ["60% Wheat", "40% Spelt", "Butter", "Irish Cheddar"],
           "weight": "0",
-          "cost": "€2.20",
+          "cost": "2.20",
           "category": ["pastry", "savory", "cheese"]
         },
         {
@@ -471,7 +471,7 @@
           "name": "Bavarian Pretzel",
           "ingredients": ["50-50 Wheat-Spelt Blend", "Yeast", "Salt"],
           "weight": "0",
-          "cost": "€1.60",
+          "cost": "1.60",
           "category": ["savory", "pretzel"]
         }
       ]
