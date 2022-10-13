@@ -7,7 +7,7 @@ export default function ShoppingCartCard({ heading, description, CTA }) {
       <Heading>{heading}</Heading>
       <Image
         alt="Shopping cart icon"
-        src="/shoppingbasket.svg"
+        src="https://res.cloudinary.com/drthrskm2/image/upload/v1665657772/capstone-project/icons/shoppingbasket_aubvbk.svg"
         layout="fixed"
         width={48}
         height={48}

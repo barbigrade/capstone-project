@@ -4,6 +4,7 @@ import PrimaryButton from '../components/PrimaryButton';
 import ShoppingCartCard from '../components/ShoppingCartCard';
 import useLocalStorage from '../hooks/useLocalStorage';
 import CartItem from '../components/CartItem';
+import BackButton from '../components/BackButton';
 
 export default function ShoppingCartPage() {
   const [cart, setCart] = useLocalStorage('_cart', []);
@@ -16,6 +17,7 @@ export default function ShoppingCartPage() {
     <>
       {cart.length > 0 && (
         <ShoppingCartWrapper>
+          <BackButton linkTo={'/'} />
           {cart.map((item) => (
             <CartItem
               image={item.image}
@@ -34,7 +36,7 @@ export default function ShoppingCartPage() {
       )}
 
       {cart.length === 0 && (
-        <ShoppingCartWrapper>
+        <EmptyShoppingCartWrapper>
           <BackgroundImageWrapper>
             <Image
               alt=" "
@@ -56,7 +58,7 @@ export default function ShoppingCartPage() {
           <ButtonWrapper>
             <PrimaryButton linkTo={'/'} text={'Browse Bread'} />
           </ButtonWrapper>
-        </ShoppingCartWrapper>
+        </EmptyShoppingCartWrapper>
       )}
     </>
   );
@@ -68,6 +70,10 @@ const ShoppingCartWrapper = styled.div`
   margin: 0 auto;
   padding-bottom: 1rem;
   width: 95vw;
+`;
+
+const EmptyShoppingCartWrapper = styled(ShoppingCartWrapper)`
+  width: 100vw;
 `;
 
 const ButtonWrapper = styled.div`
