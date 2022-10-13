@@ -8,7 +8,7 @@ export default function BackButton({ linkTo }) {
       <AnchorTag>
         <Image
           alt="A go-back button"
-          src="/backbutton.svg"
+          src="https://res.cloudinary.com/drthrskm2/image/upload/v1665657772/capstone-project/icons/backbutton_jz7pi7.svg"
           layout="fixed"
           width={48}
           height={48}

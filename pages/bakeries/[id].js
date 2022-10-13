@@ -82,7 +82,7 @@ export default function BakeryDetailPage({ bakeryData }) {
             ingredients={item.ingredients.map((ingredient, index) => {
               return <li key={index}>{ingredient}</li>;
             })}
-            weight={item.weight}
+            weight={item.weight !== '0' ? `${item.weight} ` : ''}
             cost={item.cost}
             productId={item.productId}
             key={item.productId}
@@ -100,6 +100,8 @@ const BakeryContainer = styled.div`
   margin: 0 auto;
   padding-bottom: 1rem;
   width: 95vw;
+  max-width: 40rem;
+  margin-top: 0.5rem;
 `;
 
 const BakeryContainerTop = styled(BakeryContainer)`

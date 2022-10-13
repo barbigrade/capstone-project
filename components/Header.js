@@ -10,7 +10,7 @@ export default function Header() {
         <Anchor>
           <Image
             alt="shopping cart icon"
-            src="/shoppingbasket.svg"
+            src="https://res.cloudinary.com/drthrskm2/image/upload/v1665657772/capstone-project/icons/shoppingbasket_aubvbk.svg"
             layout="fixed"
             width={40}
             height={40}

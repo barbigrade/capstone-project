@@ -6,44 +6,44 @@
       "subtitle": "Home-made sourdough bread",
       "priceRange": "€€",
       "score": "9.4",
-      "image": "/placeholder.jpg",
+      "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_lfill,g_north,h_900,w_1500/v1665659212/capstone-project/bakery%20overviews/placeholder_gejubc.jpg",
       "delivery": "Mon-Sun 08:00 - 18:00",
       "about": "Supporting small and local suppliers, we specialize in handmade sourdough bread, extending our offer with an ever-changing selection of sweet and savory pastries.",
       "productMenu": [
         {
           "productId": "1",
-          "image": "/2.jpg",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,g_center,h_300,q_100,w_300,x_0,y_0/v1665670239/capstone-project/product%20menu/pexels-marta-dzedyshko-7693953_ynenfz.jpg",
           "name": "Sourdough Loaf",
           "ingredients": ["80% Wheat", "15% Wholegrain Wheat"],
           "weight": "1000g",
-          "cost": "€6.00",
+          "cost": "6.00",
           "category": ["bread", "sourdough"]
         },
         {
           "productId": "2",
-          "image": "/2.jpg",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,h_300,w_300/v1665670239/capstone-project/product%20menu/pexels-marta-dzedyshko-7693917_dpd0tz.jpg",
           "name": "Danish Rugbrød",
           "ingredients": ["80% Rye", "Pumpkin & Sesame Seeds"],
           "weight": "850g",
-          "cost": "€4.50",
+          "cost": "4.50",
           "category": ["bread", "rye"]
         },
         {
           "productId": "3",
-          "image": "/2.jpg",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,g_west,h_300,w_300/v1665673457/capstone-project/product%20menu/kaley-dykstra-E5Yb_0jua2U-unsplash_mt1o98.jpg",
           "name": "Frenchie",
           "ingredients": ["Italian Wheat & Spelt", "Butter"],
           "weight": "0",
-          "cost": "€1.90",
+          "cost": "1.90",
           "category": ["pastry", "sweet", "croissant"]
         },
         {
           "productId": "4",
-          "image": "/2.jpg",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,h_300,w_300/v1665673256/capstone-project/product%20menu/blackieshoot-3JZZ8G1in5g-unsplash_kgebmf.jpg",
           "name": "Pain au Chocolat",
           "ingredients": ["Italian Wheat & Spelt", "Butter", "Chocolate (60%)"],
           "weight": "0",
-          "cost": "€2.20",
+          "cost": "2.20",
           "category": ["pastry", "sweet", "chocolate"]
         }
       ]
@@ -54,71 +54,71 @@
       "subtitle": "The sweetest stop on your journey",
       "priceRange": "€€",
       "score": "8.6",
-      "image": "/1.jpg",
+      "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_lfill,h_900,w_1500/v1665659203/capstone-project/bakery%20overviews/1_pk758g.jpg",
       "delivery": "Mon-Sun 07:00 - 17:00",
       "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "productMenu": [
         {
           "productId": "5",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,h_300,w_300/v1665670238/capstone-project/product%20menu/pexels-marina-leonova-7629984_zozr8r.jpg",
           "name": "Italian Sourdough",
           "ingredients": ["100% Wheat"],
           "weight": "900g",
-          "cost": "€5.50",
+          "cost": "5.50",
           "category": ["bread", "sourdough"]
         },
         {
           "productId": "6",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,g_east,h_300,w_300/v1665670238/capstone-project/product%20menu/pexels-antoni-shkraba-5588986_zjzr0w.jpg",
           "name": "House Baguette",
           "ingredients": ["70% Wheat", "15% Spelt", "15% Rye"],
           "weight": "450g",
-          "cost": "€3.30",
+          "cost": "3.30",
           "category": ["bread", "baguette"]
         },
         {
           "productId": "7",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,g_south_west,h_300,w_300/v1665670238/capstone-project/product%20menu/pexels-marina-leonova-7631197_havm7f.jpg",
           "name": "Gluten-Free Sourdough",
           "ingredients": ["Buckwheat & Brown Rice Blend", "Pumpkin Seeds"],
           "weight": "800g",
-          "cost": "€4.50",
+          "cost": "4.50",
           "category": ["bread", "gluten-free", "sourdough"]
         },
         {
           "productId": "8",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,h_300,w_300/v1665679993/capstone-project/product%20menu/pexels-valeria-boltneva-7474126_eiw3sq.jpg",
           "name": "Holy Cannoli (2x)",
           "ingredients": ["100% Wheat", "Egg", "Ricotta"],
           "weight": "0",
-          "cost": "€2.50",
+          "cost": "2.50",
           "category": ["pastry", "sweet", "cannoli"]
         },
         {
           "productId": "9",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,h_300,w_300/v1665670237/capstone-project/product%20menu/pexels-mariana-kurnyk-1775036_ishmmb.jpg",
           "name": "Croissant",
           "ingredients": ["Italian Wheat & Spelt", "Butter"],
           "weight": "0",
-          "cost": "€1.90",
+          "cost": "1.90",
           "category": ["pastry", "sweet", "croissant"]
         },
         {
           "productId": "10",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,g_south,h_300,w_300/v1665670237/capstone-project/product%20menu/pexels-polina-tankilevitch-4828336_svricw.jpg",
           "name": "Almond Croissant",
           "ingredients": ["Italian Wheat", "Butter", "Sweet Almond Paste"],
           "weight": "0",
-          "cost": "€2.00",
+          "cost": "2.00",
           "category": ["pastry", "sweet", "croissant"]
         },
         {
           "productId": "11",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,g_north_west,h_300,w_300/v1665680218/capstone-project/product%20menu/klara-avsenik-__6BAhm9jqs-unsplash_iuwech.jpg",
           "name": "Cinnamon Roll",
           "ingredients": ["100% Wheat", "Butter & Cinnamon Paste"],
           "weight": "0",
-          "cost": "€2.20",
+          "cost": "2.20",
           "category": ["pastry", "sweet"]
         }
       ]
@@ -129,67 +129,67 @@
       "subtitle": "No grain, no gain",
       "priceRange": "€",
       "score": "9.2",
-      "image": "/2.jpg",
+      "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_lfill,g_center,h_900,w_1500/v1665659205/capstone-project/bakery%20overviews/2_o4aext.jpg",
       "delivery": "Mon-Sun 08:00 - 17:30",
       "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "productMenu": [
         {
           "productId": "12",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,g_south_west,h_300,w_300/v1665670238/capstone-project/product%20menu/pexels-marina-leonova-7631197_havm7f.jpg",
           "name": "House Loaf",
           "ingredients": ["80% Wheat", "20% Rye", "Sunflower Seeds"],
           "weight": "1000g",
-          "cost": "€3.50",
+          "cost": "3.50",
           "category": ["bread", "sourdough", "multigrain"]
         },
         {
           "productId": "13",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,h_300,w_300/v1665676984/capstone-project/product%20menu/bas-peperzak-XNNurImW1xM-unsplash_jh9scx.jpg",
           "name": "Classic French Baguette",
           "ingredients": ["90% Wheat", "10% Spelt"],
           "weight": "400g",
-          "cost": "€2.90",
+          "cost": "2.90",
           "category": ["bread", "baguette"]
         },
         {
           "productId": "14",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,g_east,h_300,w_300/v1665670240/capstone-project/product%20menu/pexels-marta-dzedyshko-7175451_j1m5ww.jpg",
           "name": "Ciabatta",
           "ingredients": ["80% Wheat", "20% Whole-Wheat"],
           "weight": "450g",
-          "cost": "€3.00",
+          "cost": "3.00",
           "category": ["bread", "ciabatta"]
         },
         {
           "productId": "15",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,g_south,h_300,w_300/v1665670240/capstone-project/product%20menu/pexels-polina-tankilevitch-4828370_lvnzxm.jpg",
           "name": "Croissant",
           "ingredients": ["100% Wheat", "Butter"],
           "weight": "0",
-          "cost": "€1.50",
+          "cost": "1.50",
           "category": ["pastry", "sweet", "croissant"]
         },
         {
           "productId": "16",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,g_north,h_300,w_300/v1665670239/capstone-project/product%20menu/pexels-olya-kobruseva-5594475_p3wmhv.jpg",
           "name": "Ham & Cheese Croissant",
           "ingredients": ["100% Wheat", "Butter", "Ham", "Cheese"],
           "weight": "0",
-          "cost": "€1.50",
+          "cost": "1.50",
           "category": ["pastry", "savory", "croissant"]
         },
         {
           "productId": "17",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,h_300,w_300/v1665677851/capstone-project/product%20menu/markus-spiske-39cEDqW5_SY-unsplash_srhiqd.jpg",
           "name": "Bavarian Lye Pretzel",
           "ingredients": ["100% Wheat", "Yeast", "Salt"],
           "weight": "0",
-          "cost": "€1.20",
+          "cost": "1.20",
           "category": ["savory", "pretzel"]
         },
         {
           "productId": "18",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,g_north_west,h_300,w_300/v1665679502/capstone-project/product%20menu/anna-przepiorka-LjtviHokbr4-unsplash_qcunuj.jpg",
           "name": "King of Brownies",
           "ingredients": [
             "100% Wheat",
@@ -198,7 +198,7 @@
             "Dark Chocolate (70%)"
           ],
           "weight": "0",
-          "cost": "€2.20",
+          "cost": "2.20",
           "category": ["pastry", "sweet", "brownie"]
         }
       ]
@@ -209,43 +209,43 @@
       "subtitle": "Spelt Differently",
       "priceRange": "€€€",
       "score": "9.8",
-      "image": "/3.jpg",
+      "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_lfill,h_900,w_1500/v1665659202/capstone-project/bakery%20overviews/3_bjbxbz.jpg",
       "delivery": "Mon-Sun 07:00 - 18:00",
       "about": "Handmade with love and whole-grain spelt flour.",
       "productMenu": [
         {
           "productId": "19",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,h_300,w_300/v1665670239/capstone-project/product%20menu/pexels-geraud-pfeiffer-6605209_mpqns5.jpg",
           "name": "Queen of Spelts",
           "ingredients": [
             "100% Whole-Grain Spelt",
             "Sunflower, Pumpkin & Flaxseed"
           ],
           "weight": "1000g",
-          "cost": "€8.00",
+          "cost": "8.00",
           "category": ["bread", "spelt", "whole-grain"]
         },
         {
           "productId": "20",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,g_south_west,h_300,w_300/v1665678892/capstone-project/product%20menu/mae-mu-bph0kUmAoXc-unsplash_vnbnnd.jpg",
           "name": "Baguette",
           "ingredients": ["50-50 Whole-Grain Spelt Blend"],
           "weight": "450g",
-          "cost": "€4.80",
+          "cost": "4.80",
           "category": ["bread", "baguette", "spelt"]
         },
         {
           "productId": "21",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_lfill,h_300,w_300/v1665678156/capstone-project/product%20menu/vicky-ng-BjJxLSr23oc-unsplash_zbzau1.jpg",
           "name": "Brioche",
           "ingredients": ["50-50 Whole-Grain Spelt Blend", "Yeast"],
           "weight": "400g",
-          "cost": "€4.50",
+          "cost": "4.50",
           "category": ["bread", "sweet", "brioche", "spelt"]
         },
         {
           "productId": "22",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,g_center,h_300,w_300/v1665659202/capstone-project/bakery%20overviews/3_bjbxbz.jpg",
           "name": "Focaccia",
           "ingredients": [
             "50-50 Whole-Grain Spelt Blend",
@@ -254,25 +254,25 @@
             "Extra Virgin Olive Oil"
           ],
           "weight": "0",
-          "cost": "€4.20",
+          "cost": "4.20",
           "category": ["bread", "savory", "focaccia", "spelt"]
         },
         {
           "productId": "23",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,g_west,h_300,w_300/v1665670240/capstone-project/product%20menu/pexels-christina-polupanova-10281101_cumfhr.jpg",
           "name": "Whole-Grain Croissant",
           "ingredients": ["100% Whole-Grain Spelt", "Butter"],
           "weight": "0",
-          "cost": "€3.00",
+          "cost": "3.00",
           "category": ["pastry", "sweet", "croissant", "spelt"]
         },
         {
           "productId": "24",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,h_300,w_300/v1665677852/capstone-project/product%20menu/david-nuescheler-ZbVI9iPA6O0-unsplash_mtv1q3.jpg",
           "name": "The Bavarian",
           "ingredients": ["50-50 Whole-Grain Spelt Blend", "Yeast", "Salt"],
           "weight": "0",
-          "cost": "€2.10",
+          "cost": "2.10",
           "category": ["savory", "pretzel", "spelt"]
         }
       ]
@@ -283,58 +283,58 @@
       "subtitle": "Never Enough Bread",
       "priceRange": "€€",
       "score": "8.8",
-      "image": "/4.jpg",
+      "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_limit,h_900,w_1500/v1665659202/capstone-project/bakery%20overviews/4_tcunzv.jpg",
       "delivery": "Tue-Sun 08:00 - 18:00",
       "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "productMenu": [
         {
           "productId": "25",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,g_north,h_300,w_300/v1665670241/capstone-project/product%20menu/pexels-ready-made-3850997_zl2xzx.jpg",
           "name": "House Sourdough Loaf",
           "ingredients": ["50-50 Whole-Grain Wheat Blend"],
           "weight": "900g",
-          "cost": "€6.50",
+          "cost": "6.50",
           "category": ["bread", "sourdough", "whole-grain"]
         },
         {
           "productId": "26",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,g_face:center,h_300,w_300/v1665674047/capstone-project/product%20menu/claudia-stucki-FiPuv2w15U8-unsplash_zdfvp3.jpg",
           "name": "Potato Loaf",
           "ingredients": ["50-50 Potato-Wheat Blend", "Yeast"],
           "weight": "800g",
-          "cost": "€5.50",
+          "cost": "5.50",
           "category": ["bread", "potato"]
         },
         {
           "productId": "27",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,g_north_east,h_300,w_300/v1665678194/capstone-project/product%20menu/uliana-kopanytsia-n2qCcl2GtVU-unsplash_psxisy.jpg",
           "name": "Brioche Rolls (4x)",
           "ingredients": ["100% Wheat", "Yeast", "Sugar"],
           "weight": "0",
-          "cost": "€2.70",
+          "cost": "2.70",
           "category": ["bread", "sweet", "brioche"]
         },
         {
           "productId": "28",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,g_south,h_300,w_300/v1665678219/capstone-project/product%20menu/svetlana-b-qDpKehCEs1Y-unsplash_l7ungh.jpg",
           "name": "Challah Braid",
           "ingredients": ["100% Wheat", "Yeast", "Eggs"],
           "weight": "0",
-          "cost": "€3.70",
+          "cost": "3.70",
           "category": ["bread", "challah"]
         },
         {
           "productId": "29",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,h_300,w_300/v1665678474/capstone-project/product%20menu/eiliv-aceron-XT2c5gwYhNE-unsplash_fzcmcs.jpg",
           "name": "Cornbread",
           "ingredients": ["50-50 Wheat-Polenta Blend", "Eggs", "Buttermilk"],
           "weight": "350g",
-          "cost": "€3.00",
+          "cost": "3.00",
           "category": ["bread", "cornbread"]
         },
         {
           "productId": "30",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,g_south,h_300,w_300/v1665678589/capstone-project/product%20menu/adam-bartoszewicz-sjCYuGlREbs-unsplash_ojehfi.jpg",
           "name": "Olive & Feta Focaccia",
           "ingredients": [
             "50-50 Whole-Grain Blend",
@@ -343,25 +343,25 @@
             "Extra Virgin Olive Oil"
           ],
           "weight": "0",
-          "cost": "€3.50",
+          "cost": "3.50",
           "category": ["bread", "savory", "focaccia"]
         },
         {
           "productId": "31",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,g_south,h_300,w_300/v1665678707/capstone-project/product%20menu/kavita-joshi-rai-lE5O9DktAQY-unsplash_rw8ggz.jpg",
           "name": "Vegan Croissant",
           "ingredients": ["100% Wheat", "Vegan Butter"],
           "weight": "0",
-          "cost": "€1.90",
+          "cost": "1.90",
           "category": ["pastry", "sweet", "croissant", "vegan"]
         },
         {
           "productId": "32",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,h_300,w_300/v1665672953/capstone-project/product%20menu/tabitha-turner-Qz2oUAhXMiY-unsplash_qnfllc.jpg",
           "name": "Vegan Pain au Chocolat",
           "ingredients": ["100% Wheat", "Dark Chocolate (60%)"],
           "weight": "0",
-          "cost": "€2.10",
+          "cost": "2.10",
           "category": ["pastry", "sweet", "chocolate", "vegan"]
         }
       ]
@@ -372,22 +372,22 @@
       "subtitle": "Live, Laugh, Loaf",
       "priceRange": "€€",
       "score": "9.7",
-      "image": "/5.jpg",
+      "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_lfill,h_900,w_1500/v1665659202/capstone-project/bakery%20overviews/5_bkkdnj.jpg",
       "delivery": "Mon-Sun 08:30 - 17:30",
       "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "productMenu": [
         {
           "productId": "33",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,h_300,w_300/v1665670238/capstone-project/product%20menu/pexels-geraud-pfeiffer-6605208_igyrd9.jpg",
           "name": "Italian Sourdough Loaf",
           "ingredients": ["80% Italian Wheat", "20% Rye"],
           "weight": "1000g",
-          "cost": "€5.80",
+          "cost": "5.80",
           "category": ["bread", "sourdough"]
         },
         {
           "productId": "34",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,h_300,w_300/v1665670238/capstone-project/product%20menu/pexels-karolina-grabowska-4203052_or2eyn.jpg",
           "name": "Irish Soda Bread",
           "ingredients": [
             "50-50 Whole-Grain Blend",
@@ -396,82 +396,82 @@
             "Butter"
           ],
           "weight": "900g",
-          "cost": "€5.30",
+          "cost": "5.30",
           "category": ["bread", "soda"]
         },
         {
           "productId": "35",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,h_300,w_300/v1665676882/capstone-project/product%20menu/anastasia-gezalova-JWz5jMjsblU-unsplash_jipyge.jpg",
           "name": "The French Classic",
           "ingredients": ["100% Wheat"],
           "weight": "450g",
-          "cost": "€4.00",
+          "cost": "4.00",
           "category": ["bread", "baguette"]
         },
         {
           "productId": "36",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,h_300,w_300/v1665672652/capstone-project/product%20menu/pexels-nadin-sh-11214698_cya1lj.jpg",
           "name": "German Pumpernickel",
           "ingredients": ["100% Rye"],
           "weight": "600g",
-          "cost": "€3.90",
+          "cost": "3.90",
           "category": ["bread", "rye", "pumpernickel", "sweet", "sourdough"]
         },
         {
           "productId": "37",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,h_300,w_300/v1665677176/capstone-project/product%20menu/pexels-karolina-grabowska-4197984_rprwpb.jpg",
           "name": "Soft Potato Rolls (4x)",
           "ingredients": ["50-50 Potato-Spelt Blend", "Yeast"],
           "weight": "400g",
-          "cost": "€3.50",
+          "cost": "3.50",
           "category": ["bread", "potato"]
         },
         {
           "productId": "38",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,h_300,w_300/v1665677316/capstone-project/product%20menu/pexels-karolina-grabowska-4198047_rq38fs.jpg",
           "name": "Walnut & Current Sourdough Rolls (4x)",
           "ingredients": [
             "50-50 Whole-Grain Spelt Blend",
             "15% Walnuts & Dried Currents"
           ],
           "weight": "450g",
-          "cost": "€3.80",
+          "cost": "3.80",
           "category": ["bread", "nuts", "sweet", "sourdough"]
         },
         {
           "productId": "39",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,h_300,w_300/v1665670238/capstone-project/product%20menu/pexels-polina-tankilevitch-4828275_zxgy0g.jpg",
           "name": "Croissant",
           "ingredients": ["100% Wheat", "Butter"],
           "weight": "0",
-          "cost": "€1.70",
+          "cost": "1.70",
           "category": ["pastry", "sweet", "croissant"]
         },
         {
           "productId": "40",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,g_south_east,h_300,w_300/v1665677415/capstone-project/product%20menu/chloe-bovia-Q1Yb762uAys-unsplash_twzpgr.jpg",
           "name": "Queen-Amann",
           "ingredients": ["100% Wheat", "Butter", "Sugar & Maldon Salt"],
           "weight": "0",
-          "cost": "€2.40",
+          "cost": "2.40",
           "category": ["pastry", "sweet"]
         },
         {
           "productId": "41",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,g_south,h_300,w_300/v1665677638/capstone-project/product%20menu/asa-palsson-sL-IYwwRxGk-unsplash_uz6gta.jpg",
           "name": "Cheddar Knot",
           "ingredients": ["60% Wheat", "40% Spelt", "Butter", "Irish Cheddar"],
           "weight": "0",
-          "cost": "€2.20",
+          "cost": "2.20",
           "category": ["pastry", "savory", "cheese"]
         },
         {
           "productId": "42",
-          "image": "",
+          "image": "https://res.cloudinary.com/drthrskm2/image/upload/c_thumb,g_center,h_300,w_300/v1665677980/capstone-project/product%20menu/daniel-schludi-l5lCxvZfwcQ-unsplash_njggn0.jpg",
           "name": "Bavarian Pretzel",
           "ingredients": ["50-50 Wheat-Spelt Blend", "Yeast", "Salt"],
           "weight": "0",
-          "cost": "€1.60",
+          "cost": "1.60",
           "category": ["savory", "pretzel"]
         }
       ]

@@ -78,6 +78,7 @@ const IngredientWrapper = styled.ul`
 const ImageWrapper = styled.div`
   display: grid;
   justify-items: right;
+  align-items: center;
 `;
 
 const HiddenOptions = styled.div`

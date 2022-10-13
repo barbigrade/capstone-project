@@ -23,7 +23,16 @@ export default function BakeryDetails({
       <h2>{name}</h2>
       <Subtitle>{subtitle}</Subtitle>
 
-      <span>{score}</span>
+      <IconWrapper>
+        <Image
+          alt="score icon"
+          src="https://res.cloudinary.com/drthrskm2/image/upload/v1665692973/capstone-project/icons/star_FILL0_wght300_GRAD0_opsz48_xeafty.svg"
+          layout="fixed"
+          width={20}
+          height={20}
+        />
+        <span>{score}</span>
+      </IconWrapper>
       <span>
         <strong>Delivery</strong> <br />
         {delivery}
@@ -58,4 +67,9 @@ const Subtitle = styled.h3`
   color: #5a5a5b;
   margin: 0.2rem 0 0.5rem 0;
   font-weight: 500;
+`;
+
+const IconWrapper = styled.div`
+  display: flex;
+  align-items: center;
 `;

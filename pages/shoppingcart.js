@@ -4,6 +4,7 @@ import PrimaryButton from '../components/PrimaryButton';
 import ShoppingCartCard from '../components/ShoppingCartCard';
 import useLocalStorage from '../hooks/useLocalStorage';
 import CartItem from '../components/CartItem';
+import BackButton from '../components/BackButton';
 
 export default function ShoppingCartPage() {
   const [cart, setCart] = useLocalStorage('_cart', []);
@@ -16,6 +17,8 @@ export default function ShoppingCartPage() {
     <>
       {cart.length > 0 && (
         <ShoppingCartWrapper>
+          <ShoppingCartHeader>Bread Basket</ShoppingCartHeader>
+          <BackButton linkTo={'/'} />
           {cart.map((item) => (
             <CartItem
               image={item.image}
@@ -23,7 +26,7 @@ export default function ShoppingCartPage() {
               ingredients={item.ingredients.map((ingredient, index) => {
                 return <li key={index}>{ingredient}</li>;
               })}
-              weight={item.weight}
+              weight={item.weight !== '0' ? `${item.weight} ` : ''}
               cost={item.cost}
               productId={item.productId}
               key={item.productId}
@@ -34,14 +37,14 @@ export default function ShoppingCartPage() {
       )}
 
       {cart.length === 0 && (
-        <ShoppingCartWrapper>
+        <EmptyShoppingCartWrapper>
           <BackgroundImageWrapper>
             <Image
               alt=" "
-              src="/shoppingcartbackground2.jpg"
+              src="https://res.cloudinary.com/drthrskm2/image/upload/c_limit,h_1792,w_828/v1665659203/capstone-project/bakery%20overviews/shoppingcartbackground2_vxwbau.jpg"
               layout="responsive"
-              width={1920}
-              height={2880}
+              width={828}
+              height={1792}
             />
           </BackgroundImageWrapper>
           <DescriptionWrapper>
@@ -56,11 +59,16 @@ export default function ShoppingCartPage() {
           <ButtonWrapper>
             <PrimaryButton linkTo={'/'} text={'Browse Bread'} />
           </ButtonWrapper>
-        </ShoppingCartWrapper>
+        </EmptyShoppingCartWrapper>
       )}
     </>
   );
 }
+
+const ShoppingCartHeader = styled.h2`
+  font-weight: 400;
+  margin: 2rem 0 0 0;
+`;
 
 const ShoppingCartWrapper = styled.div`
   display: grid;
@@ -68,6 +76,11 @@ const ShoppingCartWrapper = styled.div`
   margin: 0 auto;
   padding-bottom: 1rem;
   width: 95vw;
+  max-width: 40rem;
+`;
+
+const EmptyShoppingCartWrapper = styled(ShoppingCartWrapper)`
+  width: 100vw;
 `;
 
 const ButtonWrapper = styled.div`
