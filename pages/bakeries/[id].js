@@ -101,6 +101,7 @@ const BakeryContainer = styled.div`
   padding-bottom: 1rem;
   width: 95vw;
   max-width: 40rem;
+  margin-top: 0.5rem;
 `;
 
 const BakeryContainerTop = styled(BakeryContainer)`

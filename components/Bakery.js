@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Image from 'next/image';
 
 export default function Bakery({ name, subtitle, priceRange, score }) {
   return (
@@ -7,7 +8,16 @@ export default function Bakery({ name, subtitle, priceRange, score }) {
       <Subtitle>{subtitle}</Subtitle>
       <PriceAndScore>
         <span>{priceRange}</span>
-        <span>{score}</span>
+        <div>
+          <Image
+            alt="score icon"
+            src="https://res.cloudinary.com/drthrskm2/image/upload/v1665692973/capstone-project/icons/star_FILL0_wght300_GRAD0_opsz48_xeafty.svg"
+            layout="fixed"
+            width={20}
+            height={20}
+          />
+          <span>{score}</span>
+        </div>
       </PriceAndScore>
     </BakeryCard>
   );
@@ -19,6 +29,10 @@ const BakeryCard = styled.li`
   font-weight: 500;
   flex-direction: column;
   padding: 0.7rem;
+
+  div {
+    display: flex;
+  }
 `;
 
 const Subtitle = styled.span`

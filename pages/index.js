@@ -4,6 +4,7 @@ import fsPromises from 'fs/promises';
 import path from 'path';
 import Bakery from '../components/Bakery';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export async function getStaticProps() {
   const filePath = path.join(process.cwd(), 'data.json');
@@ -25,7 +26,17 @@ export default function Home(props) {
 
       <BakeryListContainer>
         <h2>All Bakeries</h2>
+
         <BakeryList>
+          <ImageWrapper>
+            <Image
+              alt=" "
+              src="https://res.cloudinary.com/drthrskm2/image/upload/c_lfill,g_south,h_900,w_1500/v1665659202/capstone-project/bakery%20overviews/shoppingcartbackground_u1oxmv.jpg"
+              layout="responsive"
+              width={300}
+              height={200}
+            />
+          </ImageWrapper>
           {bakeries.map((bakery) => (
             <Link
               key={bakery.id}
@@ -75,6 +86,11 @@ const BakeryListContainer = styled.div`
   a:active {
     cursor: pointer;
   }
+`;
+
+const ImageWrapper = styled.div`
+  border: 1px dashed #000000;
+  padding: 0.7rem;
 `;
 
 const BakeryList = styled.ul`
