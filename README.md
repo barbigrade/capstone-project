@@ -13,6 +13,13 @@ the neuefische Web Development Bootcamp in September/October 2022.
 Make sure to set up your browser to responsive mode (iPhone SE) as the app is optimized for mobile usage.  
 Find it [here](https://dailybread.vercel.app/) 🥐
 
+## Tech Stack
+
+- React
+- NextJS
+- Styled Components
+- Figma
+
 ## Project Setup
 
 - Clone this repository
