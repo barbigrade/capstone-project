@@ -5,6 +5,7 @@ import ShoppingCartCard from '../components/ShoppingCartCard';
 import useLocalStorage from '../hooks/useLocalStorage';
 import CartItem from '../components/CartItem';
 import BackButton from '../components/BackButton';
+import ShoppingCartIcon from '../components/ShoppingCartIcon';
 
 export default function ShoppingCartPage() {
   const [cart, setCart] = useLocalStorage('_cart', []);
@@ -15,6 +16,7 @@ export default function ShoppingCartPage() {
 
   return (
     <>
+      <ShoppingCartIcon />
       {cart.length > 0 && (
         <ShoppingCartWrapper>
           <ShoppingCartHeader>Bread Basket</ShoppingCartHeader>
@@ -33,6 +35,16 @@ export default function ShoppingCartPage() {
               onRemoveFromCart={removeFromCart}
             />
           ))}
+          <ShoppingCartFooterWrapper>
+            <ShoppingCartFooter>
+              Total:
+              {' €'}
+              {cart
+                .reduce((sum, item) => sum + item.cost * item.count, 0)
+                .toFixed(2)}
+            </ShoppingCartFooter>
+            <CheckoutButton>Checkout</CheckoutButton>
+          </ShoppingCartFooterWrapper>
         </ShoppingCartWrapper>
       )}
 
@@ -70,6 +82,19 @@ const ShoppingCartHeader = styled.h2`
   margin: 2rem 0 0 0;
 `;
 
+const ShoppingCartFooterWrapper = styled.div`
+  border: 1px dashed #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0.1rem 0.7rem;
+`;
+
+const ShoppingCartFooter = styled.h4`
+  font-weight: 600;
+  margin: 0.5rem 0 0.5rem 0;
+`;
+
 const ShoppingCartWrapper = styled.div`
   display: grid;
   gap: 1rem;
@@ -96,4 +121,13 @@ const DescriptionWrapper = styled(ButtonWrapper)`
 
 const BackgroundImageWrapper = styled.div`
   max-height: 100vh;
+`;
+
+const CheckoutButton = styled.button`
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  padding: 10px 15px;
 `;

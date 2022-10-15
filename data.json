@@ -17,7 +17,6 @@
           "ingredients": ["80% Wheat", "15% Wholegrain Wheat"],
           "weight": "1000g",
           "cost": "6.00",
-          "qty": "12",
           "category": ["bread", "sourdough"]
         },
         {
@@ -27,7 +26,6 @@
           "ingredients": ["80% Rye", "Pumpkin & Sesame Seeds"],
           "weight": "850g",
           "cost": "4.50",
-          "qty": "6",
           "category": ["bread", "rye"]
         },
         {
@@ -37,7 +35,6 @@
           "ingredients": ["Italian Wheat & Spelt", "Butter"],
           "weight": "0",
           "cost": "1.90",
-          "qty": "25",
           "category": ["pastry", "sweet", "croissant"]
         },
         {
@@ -47,7 +44,6 @@
           "ingredients": ["Italian Wheat & Spelt", "Butter", "Chocolate (60%)"],
           "weight": "0",
           "cost": "2.20",
-          "qty": "18",
           "category": ["pastry", "sweet", "chocolate"]
         }
       ]
@@ -69,7 +65,6 @@
           "ingredients": ["100% Wheat"],
           "weight": "900g",
           "cost": "5.50",
-          "qty": "15",
           "category": ["bread", "sourdough"]
         },
         {
@@ -79,7 +74,6 @@
           "ingredients": ["70% Wheat", "15% Spelt", "15% Rye"],
           "weight": "450g",
           "cost": "3.30",
-          "qty": "26",
           "category": ["bread", "baguette"]
         },
         {
@@ -89,7 +83,6 @@
           "ingredients": ["Buckwheat & Brown Rice Blend", "Pumpkin Seeds"],
           "weight": "800g",
           "cost": "4.50",
-          "qty": "12",
           "category": ["bread", "gluten-free", "sourdough"]
         },
         {
@@ -99,7 +92,6 @@
           "ingredients": ["100% Wheat", "Egg", "Ricotta"],
           "weight": "0",
           "cost": "2.50",
-          "qty": "25",
           "category": ["pastry", "sweet", "cannoli"]
         },
         {
@@ -109,7 +101,6 @@
           "ingredients": ["Italian Wheat & Spelt", "Butter"],
           "weight": "0",
           "cost": "1.90",
-          "qty": "30",
           "category": ["pastry", "sweet", "croissant"]
         },
         {
@@ -119,7 +110,6 @@
           "ingredients": ["Italian Wheat", "Butter", "Sweet Almond Paste"],
           "weight": "0",
           "cost": "2.00",
-          "qty": "15",
           "category": ["pastry", "sweet", "croissant"]
         },
         {
@@ -129,7 +119,6 @@
           "ingredients": ["100% Wheat", "Butter & Cinnamon Paste"],
           "weight": "0",
           "cost": "2.20",
-          "qty": "18",
           "category": ["pastry", "sweet"]
         }
       ]
@@ -151,7 +140,6 @@
           "ingredients": ["80% Wheat", "20% Rye", "Sunflower Seeds"],
           "weight": "1000g",
           "cost": "3.50",
-          "qty": "20",
           "category": ["bread", "sourdough", "multigrain"]
         },
         {
@@ -161,7 +149,6 @@
           "ingredients": ["90% Wheat", "10% Spelt"],
           "weight": "400g",
           "cost": "2.90",
-          "qty": "22",
           "category": ["bread", "baguette"]
         },
         {
@@ -171,7 +158,6 @@
           "ingredients": ["80% Wheat", "20% Whole-Wheat"],
           "weight": "450g",
           "cost": "3.00",
-          "qty": "10",
           "category": ["bread", "ciabatta"]
         },
         {
@@ -181,7 +167,6 @@
           "ingredients": ["100% Wheat", "Butter"],
           "weight": "0",
           "cost": "1.50",
-          "qty": "16",
           "category": ["pastry", "sweet", "croissant"]
         },
         {
@@ -191,7 +176,6 @@
           "ingredients": ["100% Wheat", "Butter", "Ham", "Cheese"],
           "weight": "0",
           "cost": "1.50",
-          "qty": "9",
           "category": ["pastry", "savory", "croissant"]
         },
         {
@@ -201,7 +185,6 @@
           "ingredients": ["100% Wheat", "Yeast", "Salt"],
           "weight": "0",
           "cost": "1.20",
-          "qty": "14",
           "category": ["savory", "pretzel"]
         },
         {
@@ -216,7 +199,6 @@
           ],
           "weight": "0",
           "cost": "2.20",
-          "qty": "12",
           "category": ["pastry", "sweet", "brownie"]
         }
       ]
@@ -241,7 +223,6 @@
           ],
           "weight": "1000g",
           "cost": "8.00",
-          "qty": "10",
           "category": ["bread", "spelt", "whole-grain"]
         },
         {
@@ -251,7 +232,6 @@
           "ingredients": ["50-50 Whole-Grain Spelt Blend"],
           "weight": "450g",
           "cost": "4.80",
-          "qty": "14",
           "category": ["bread", "baguette", "spelt"]
         },
         {
@@ -261,7 +241,6 @@
           "ingredients": ["50-50 Whole-Grain Spelt Blend", "Yeast"],
           "weight": "400g",
           "cost": "4.50",
-          "qty": "8",
           "category": ["bread", "sweet", "brioche", "spelt"]
         },
         {
@@ -276,7 +255,6 @@
           ],
           "weight": "0",
           "cost": "4.20",
-          "qty": "12",
           "category": ["bread", "savory", "focaccia", "spelt"]
         },
         {
@@ -286,7 +264,6 @@
           "ingredients": ["100% Whole-Grain Spelt", "Butter"],
           "weight": "0",
           "cost": "3.00",
-          "qty": "16",
           "category": ["pastry", "sweet", "croissant", "spelt"]
         },
         {
@@ -296,7 +273,6 @@
           "ingredients": ["50-50 Whole-Grain Spelt Blend", "Yeast", "Salt"],
           "weight": "0",
           "cost": "2.10",
-          "qty": "18",
           "category": ["savory", "pretzel", "spelt"]
         }
       ]
@@ -318,7 +294,6 @@
           "ingredients": ["50-50 Whole-Grain Wheat Blend"],
           "weight": "900g",
           "cost": "6.50",
-          "qty": "19",
           "category": ["bread", "sourdough", "whole-grain"]
         },
         {
@@ -328,7 +303,6 @@
           "ingredients": ["50-50 Potato-Wheat Blend", "Yeast"],
           "weight": "800g",
           "cost": "5.50",
-          "qty": "12",
           "category": ["bread", "potato"]
         },
         {
@@ -338,7 +312,6 @@
           "ingredients": ["100% Wheat", "Yeast", "Sugar"],
           "weight": "0",
           "cost": "2.70",
-          "qty": "4",
           "category": ["bread", "sweet", "brioche"]
         },
         {
@@ -348,7 +321,6 @@
           "ingredients": ["100% Wheat", "Yeast", "Eggs"],
           "weight": "0",
           "cost": "3.70",
-          "qty": "8",
           "category": ["bread", "challah"]
         },
         {
@@ -358,7 +330,6 @@
           "ingredients": ["50-50 Wheat-Polenta Blend", "Eggs", "Buttermilk"],
           "weight": "350g",
           "cost": "3.00",
-          "qty": "5",
           "category": ["bread", "cornbread"]
         },
         {
@@ -373,7 +344,6 @@
           ],
           "weight": "0",
           "cost": "3.50",
-          "qty": "8",
           "category": ["bread", "savory", "focaccia"]
         },
         {
@@ -383,7 +353,6 @@
           "ingredients": ["100% Wheat", "Vegan Butter"],
           "weight": "0",
           "cost": "1.90",
-          "qty": "7",
           "category": ["pastry", "sweet", "croissant", "vegan"]
         },
         {
@@ -393,7 +362,6 @@
           "ingredients": ["100% Wheat", "Dark Chocolate (60%)"],
           "weight": "0",
           "cost": "2.10",
-          "qty": "9",
           "category": ["pastry", "sweet", "chocolate", "vegan"]
         }
       ]
@@ -415,7 +383,6 @@
           "ingredients": ["80% Italian Wheat", "20% Rye"],
           "weight": "1000g",
           "cost": "5.80",
-          "qty": "17",
           "category": ["bread", "sourdough"]
         },
         {
@@ -430,7 +397,6 @@
           ],
           "weight": "900g",
           "cost": "5.30",
-          "qty": "4",
           "category": ["bread", "soda"]
         },
         {
@@ -440,7 +406,6 @@
           "ingredients": ["100% Wheat"],
           "weight": "450g",
           "cost": "4.00",
-          "qty": "12",
           "category": ["bread", "baguette"]
         },
         {
@@ -450,7 +415,6 @@
           "ingredients": ["100% Rye"],
           "weight": "600g",
           "cost": "3.90",
-          "qty": "5",
           "category": ["bread", "rye", "pumpernickel", "sweet", "sourdough"]
         },
         {
@@ -460,7 +424,6 @@
           "ingredients": ["50-50 Potato-Spelt Blend", "Yeast"],
           "weight": "400g",
           "cost": "3.50",
-          "qty": "8",
           "category": ["bread", "potato"]
         },
         {
@@ -473,7 +436,6 @@
           ],
           "weight": "450g",
           "cost": "3.80",
-          "qty": "6",
           "category": ["bread", "nuts", "sweet", "sourdough"]
         },
         {
@@ -483,7 +445,6 @@
           "ingredients": ["100% Wheat", "Butter"],
           "weight": "0",
           "cost": "1.70",
-          "qty": "20",
           "category": ["pastry", "sweet", "croissant"]
         },
         {
@@ -493,7 +454,6 @@
           "ingredients": ["100% Wheat", "Butter", "Sugar & Maldon Salt"],
           "weight": "0",
           "cost": "2.40",
-          "qty": "22",
           "category": ["pastry", "sweet"]
         },
         {
@@ -503,7 +463,6 @@
           "ingredients": ["60% Wheat", "40% Spelt", "Butter", "Irish Cheddar"],
           "weight": "0",
           "cost": "2.20",
-          "qty": "9",
           "category": ["pastry", "savory", "cheese"]
         },
         {
@@ -513,7 +472,6 @@
           "ingredients": ["50-50 Wheat-Spelt Blend", "Yeast", "Salt"],
           "weight": "0",
           "cost": "1.60",
-          "qty": "12",
           "category": ["savory", "pretzel"]
         }
       ]

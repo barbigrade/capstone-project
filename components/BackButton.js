@@ -21,5 +21,6 @@ export default function BackButton({ linkTo }) {
 const AnchorTag = styled.a`
   top: 0.6rem;
   margin-left: 0.5rem;
-  position: absolute;
+  position: fixed;
+  z-index: 11;
 `;

@@ -7,8 +7,10 @@ export default function CartItem({
   cost,
   ingredients,
   weight,
+  // qty,
   productId,
   onRemoveFromCart,
+  // count,
 }) {
   return (
     <CartItemWrapper>

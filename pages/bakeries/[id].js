@@ -4,6 +4,7 @@ import BakeryMenu from '../../components/BakeryMenu';
 import bakeries from '../../data.json';
 import BackButton from '../../components/BackButton';
 import useLocalStorage from '../../hooks/useLocalStorage';
+import ShoppingCartIcon from '../../components/ShoppingCartIcon';
 
 export function getAllBakeries() {
   const allBakeries = bakeries.bakeries.map((bakeries) => {
@@ -50,17 +51,18 @@ export default function BakeryDetailPage({ bakeryData }) {
       setCart(
         cart.map((cartItem) =>
           cartItem.productId === existingCartItem
-            ? { ...existingCartItem }
+            ? { ...existingCartItem, count: existingCartItem.count + 1 }
             : cartItem
         )
       );
     } else {
-      setCart([...cart, { ...item }]);
+      setCart([...cart, { ...item, count: 1 }]);
     }
   }
 
   return (
     <>
+      <ShoppingCartIcon />
       <BakeryContainerTop>
         <BackButton linkTo={'/'} />
         <BakeryDetails

@@ -5,6 +5,7 @@ import path from 'path';
 import Bakery from '../components/Bakery';
 import Link from 'next/link';
 import Image from 'next/image';
+import ShoppingCartIcon from '../components/ShoppingCartIcon';
 
 export async function getStaticProps() {
   const filePath = path.join(process.cwd(), 'data.json');
@@ -23,7 +24,7 @@ export default function Home(props) {
       <Head>
         <title>DAILY BREAD</title>
       </Head>
-
+      <ShoppingCartIcon />
       <BakeryListContainer>
         <h2>All Bakeries</h2>
 
