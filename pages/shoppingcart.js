@@ -6,12 +6,18 @@ import useLocalStorage from '../hooks/useLocalStorage';
 import CartItem from '../components/CartItem';
 import BackButton from '../components/BackButton';
 import ShoppingCartIcon from '../components/ShoppingCartIcon';
+import { useState } from 'react';
 
 export default function ShoppingCartPage() {
   const [cart, setCart] = useLocalStorage('_cart', []);
 
   function removeFromCart(productId) {
     setCart(cart.filter((cartItem) => cartItem.productId !== productId));
+  }
+  const [showCheckout, setShowCheckout] = useState(false);
+
+  function showCheckoutCard() {
+    setShowCheckout(!showCheckout);
   }
 
   return (
@@ -43,8 +49,28 @@ export default function ShoppingCartPage() {
                 .reduce((sum, item) => sum + item.cost * item.count, 0)
                 .toFixed(2)}
             </ShoppingCartFooter>
-            <CheckoutButton>Checkout</CheckoutButton>
+            <CheckoutButton onClick={showCheckoutCard}>Checkout</CheckoutButton>
           </ShoppingCartFooterWrapper>
+          {showCheckout && (
+            <CheckoutCard>
+              <CheckoutTitle>Summary</CheckoutTitle>
+              <ul>
+                {cart.map((item) => (
+                  <CheckoutDescription>
+                    {item.name} | {item.cost}
+                  </CheckoutDescription>
+                ))}
+              </ul>
+              <span>
+                Total:
+                {' €'}
+                {cart
+                  .reduce((sum, item) => sum + item.cost * item.count, 0)
+                  .toFixed(2)}
+              </span>
+              <PayButton>Place Order</PayButton>
+            </CheckoutCard>
+          )}
         </ShoppingCartWrapper>
       )}
 
@@ -83,7 +109,6 @@ const ShoppingCartHeader = styled.h2`
 `;
 
 const ShoppingCartFooterWrapper = styled.div`
-  /* border-top: 1px dashed #000000; */
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -136,4 +161,48 @@ const CheckoutButton = styled.button`
     background-color: rgba(255, 255, 255, 0.8);
     color: rgba(255, 105, 0, 1);
   }
+`;
+
+const CheckoutCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  padding: 1.3rem;
+  background-color: rgba(255, 105, 0, 1);
+  color: #ffffff;
+  align-items: center;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95vw;
+  max-width: 35rem;
+
+  ul {
+    border-bottom: 1px solid #ffffff;
+    list-style: none;
+    padding: 0.5rem 3rem 0.5rem 0;
+    margin: 0 0 0.8rem 0;
+  }
+`;
+
+const CheckoutTitle = styled.h2`
+  font-size: xx-large;
+  font-weight: 300;
+  padding: 0 0 0.5rem 0;
+  margin: 0.5rem 0 0 0;
+  border-bottom: 1px solid #ffffff;
+`;
+
+const CheckoutDescription = styled.li`
+  display: flex;
+  margin: 0.5rem 0 0.5rem 0;
+  font-size: 1rem;
+  justify-content: left;
+  padding: 0;
+`;
+
+const PayButton = styled(CheckoutButton)`
+  margin: 0.8rem 0 0.5rem 0;
+  border: none;
 `;
