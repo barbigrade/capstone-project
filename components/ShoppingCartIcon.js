@@ -7,42 +7,39 @@ export default function ShoppingCartIcon() {
   const [cart] = useLocalStorage('_cart', []);
 
   return (
-    <IconWrapper>
-      <Link href={'/shoppingcart'}>
-        <Anchor>
-          <Image
-            alt="shopping cart icon"
-            src="https://res.cloudinary.com/drthrskm2/image/upload/v1665657772/capstone-project/icons/shoppingbasket_aubvbk.svg"
-            layout="fixed"
-            width={40}
-            height={40}
-          />
-          {cart.length > 0 && <Counter>{cart.length}</Counter>}
-        </Anchor>
-      </Link>
-    </IconWrapper>
+    <Link href={'/shoppingcart'}>
+      <Anchor>
+        <Image
+          alt="shopping cart icon"
+          src="https://res.cloudinary.com/drthrskm2/image/upload/v1665657772/capstone-project/icons/shoppingbasket_aubvbk.svg"
+          layout="fixed"
+          width={40}
+          height={40}
+        />
+        {cart.length > 0 && <Counter>{cart.length}</Counter>}
+      </Anchor>
+    </Link>
   );
 }
 
-const IconWrapper = styled.div`
-  z-index: 11;
+const Anchor = styled.a`
   position: fixed;
-  top: 0.6rem;
   right: 1.4rem;
+  top: 0.6rem;
+  z-index: 11;
 `;
 
-const Anchor = styled.a``;
-
 const Counter = styled.div`
-  width: 1.2rem;
-  height: 1.2rem;
-  background-color: rgba(255, 105, 0, 1);
-  color: #ffffff;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  position: absolute;
+  background-color: rgba(255, 105, 0, 1);
+  border-radius: 50%;
   bottom: 0.3rem;
+  color: #ffffff;
+  display: flex;
+  font-size: smaller;
+  height: 1.2rem;
+  justify-content: center;
+  position: absolute;
   right: 0.3rem;
+  width: 1.2rem;
 `;

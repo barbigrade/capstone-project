@@ -77,7 +77,6 @@ export default function ShoppingCartPage() {
                   ))}
                 </ul>
               )}
-
               {showOrderPlaced ? (
                 <ContinueShoppingButton onClick={removeAllItemsFromCart}>
                   Continue Shopping
