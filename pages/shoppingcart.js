@@ -71,7 +71,7 @@ export default function ShoppingCartPage({ cart, setCart }) {
               ) : (
                 <ul>
                   {cart.map((item) => (
-                    <CheckoutDescription>
+                    <CheckoutDescription key={item.productId}>
                       {`${item.name} | ${item.cost}`}
                     </CheckoutDescription>
                   ))}
