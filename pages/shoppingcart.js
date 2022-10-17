@@ -2,14 +2,14 @@ import Image from 'next/image';
 import styled from 'styled-components';
 import PrimaryButton from '../components/PrimaryButton';
 import ShoppingCartCard from '../components/ShoppingCartCard';
-import useLocalStorage from '../hooks/useLocalStorage';
+// import useLocalStorage from '../hooks/useLocalStorage';
 import CartItem from '../components/CartItem';
 import BackButton from '../components/BackButton';
 import ShoppingCartIcon from '../components/ShoppingCartIcon';
 import { useState } from 'react';
 
-export default function ShoppingCartPage() {
-  const [cart, setCart] = useLocalStorage('_cart', []);
+export default function ShoppingCartPage({ cart, setCart }) {
+  // const [cart, setCart] = useLocalStorage('_cart', []);
   const ShoppingCartTotal = cart
     .reduce((sum, item) => sum + item.cost * item.count, 0)
     .toFixed(2);
@@ -34,7 +34,7 @@ export default function ShoppingCartPage() {
 
   return (
     <>
-      <ShoppingCartIcon />
+      <ShoppingCartIcon cart={cart} />
       {cart.length > 0 && (
         <ShoppingCartWrapper>
           <ShoppingCartHeader>Bread Basket</ShoppingCartHeader>

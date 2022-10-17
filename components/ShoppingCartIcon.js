@@ -3,8 +3,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styled from 'styled-components';
 
-export default function ShoppingCartIcon() {
-  const [cart] = useLocalStorage('_cart', []);
+export default function ShoppingCartIcon({ cart }) {
+  // const [cart] = useLocalStorage('_cart', []);
 
   return (
     <Link href={'/shoppingcart'}>
@@ -16,7 +16,7 @@ export default function ShoppingCartIcon() {
           width={40}
           height={40}
         />
-        {cart.length > 0 && <Counter>{cart.length}</Counter>}
+        {cart?.length > 0 && <Counter>{cart.length}</Counter>}
       </Anchor>
     </Link>
   );

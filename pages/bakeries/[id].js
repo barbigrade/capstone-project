@@ -38,31 +38,36 @@ export function getStaticProps(context) {
   };
 }
 
-export default function BakeryDetailPage({ bakeryData }) {
+export default function BakeryDetailPage({
+  bakeryData,
+  onAddToCart,
+  cart,
+  setCart,
+}) {
   const productMenu = bakeryData.productMenu;
 
-  const [cart, setCart] = useLocalStorage('_cart', []);
+  // const [cart, setCart] = useLocalStorage('_cart', []);
 
-  function addToCart(item) {
-    const existingCartItem = cart.find(
-      (cartItem) => cartItem.productId === item.productId
-    );
-    if (existingCartItem) {
-      setCart(
-        cart.map((cartItem) =>
-          cartItem.productId === existingCartItem
-            ? { ...existingCartItem, count: existingCartItem.count + 1 }
-            : cartItem
-        )
-      );
-    } else {
-      setCart([...cart, { ...item, count: 1 }]);
-    }
-  }
+  // function addToCart(item) {
+  //   const existingCartItem = cart.find(
+  //     (cartItem) => cartItem.productId === item.productId
+  //   );
+  //   if (existingCartItem) {
+  //     setCart(
+  //       cart.map((cartItem) =>
+  //         cartItem.productId === existingCartItem
+  //           ? { ...existingCartItem, count: existingCartItem.count + 1 }
+  //           : cartItem
+  //       )
+  //     );
+  //   } else {
+  //     setCart([...cart, { ...item, count: 1 }]);
+  //   }
+  // }
 
   return (
     <>
-      <ShoppingCartIcon />
+      <ShoppingCartIcon cart={cart} />
       <BakeryContainerTop>
         <BackButton linkTo={'/'} />
         <BakeryDetails
@@ -88,7 +93,7 @@ export default function BakeryDetailPage({ bakeryData }) {
             cost={item.cost}
             productId={item.productId}
             key={item.productId}
-            onAddToCart={addToCart}
+            onAddToCart={() => onAddToCart(item, setCart, cart)}
           />
         ))}
       </BakeryContainer>

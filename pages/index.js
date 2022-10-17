@@ -17,14 +17,14 @@ export async function getStaticProps() {
   };
 }
 
-export default function Home(props) {
+export default function Home(props, { cart }) {
   const bakeries = props.bakeries;
   return (
     <>
       <Head>
         <title>DAILY BREAD</title>
       </Head>
-      <ShoppingCartIcon />
+      <ShoppingCartIcon cart={cart} />
       <BakeryListContainer>
         <h2>All Bakeries</h2>
 
