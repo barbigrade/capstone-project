@@ -83,16 +83,16 @@ const ShoppingCartHeader = styled.h2`
 `;
 
 const ShoppingCartFooterWrapper = styled.div`
-  border: 1px dashed #000000;
+  /* border-top: 1px dashed #000000; */
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  padding: 0.1rem 0.7rem;
+  align-content: center;
+  padding: 0.1rem 0;
 `;
 
 const ShoppingCartFooter = styled.h4`
-  font-weight: 600;
-  margin: 0.5rem 0 0.5rem 0;
+  font-weight: 500;
+  margin: 0 0 0.5rem 0;
 `;
 
 const ShoppingCartWrapper = styled.div`
@@ -130,4 +130,10 @@ const CheckoutButton = styled.button`
   font-family: 'Quicksand', sans-serif;
   font-weight: 600;
   padding: 10px 15px;
+
+  :hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 105, 0, 1);
+  }
 `;
