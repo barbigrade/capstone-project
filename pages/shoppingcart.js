@@ -10,12 +10,24 @@ import { useState } from 'react';
 
 export default function ShoppingCartPage() {
   const [cart, setCart] = useLocalStorage('_cart', []);
+  const ShoppingCartTotal = cart
+    .reduce((sum, item) => sum + item.cost * item.count, 0)
+    .toFixed(2);
+
+  const [showOrderPlaced, setShowOrderPlaced] = useState(false);
+  function OrderPlaced() {
+    setShowOrderPlaced(!showOrderPlaced);
+  }
+
+  function removeAllItemsFromCart() {
+    setCart([]);
+  }
 
   function removeFromCart(productId) {
     setCart(cart.filter((cartItem) => cartItem.productId !== productId));
   }
-  const [showCheckout, setShowCheckout] = useState(false);
 
+  const [showCheckout, setShowCheckout] = useState(false);
   function showCheckoutCard() {
     setShowCheckout(!showCheckout);
   }
@@ -45,30 +57,43 @@ export default function ShoppingCartPage() {
             <ShoppingCartFooter>
               Total:
               {' €'}
-              {cart
-                .reduce((sum, item) => sum + item.cost * item.count, 0)
-                .toFixed(2)}
+              {ShoppingCartTotal}
             </ShoppingCartFooter>
             <CheckoutButton onClick={showCheckoutCard}>Checkout</CheckoutButton>
           </ShoppingCartFooterWrapper>
           {showCheckout && (
             <CheckoutCard>
-              <CheckoutTitle>Summary</CheckoutTitle>
-              <ul>
-                {cart.map((item) => (
-                  <CheckoutDescription>
-                    {item.name} | {item.cost}
-                  </CheckoutDescription>
-                ))}
-              </ul>
-              <span>
-                Total:
-                {' €'}
-                {cart
-                  .reduce((sum, item) => sum + item.cost * item.count, 0)
-                  .toFixed(2)}
-              </span>
-              <PayButton>Place Order</PayButton>
+              <CheckoutTitle>
+                {showOrderPlaced ? 'Success!' : 'Summary'}
+              </CheckoutTitle>
+              {showOrderPlaced ? (
+                <OrderPlacedText>Your order has been placed!</OrderPlacedText>
+              ) : (
+                <ul>
+                  {cart.map((item) => (
+                    <CheckoutDescription>
+                      {`${item.name} | ${item.cost}`}
+                    </CheckoutDescription>
+                  ))}
+                </ul>
+              )}
+
+              {showOrderPlaced ? (
+                <ContinueShoppingButton onClick={removeAllItemsFromCart}>
+                  Continue Shopping
+                </ContinueShoppingButton>
+              ) : (
+                <span>
+                  Total:
+                  {' €'}
+                  {ShoppingCartTotal}
+                </span>
+              )}
+              {showOrderPlaced ? (
+                ''
+              ) : (
+                <PayButton onClick={OrderPlaced}>Place Order</PayButton>
+              )}
             </CheckoutCard>
           )}
         </ShoppingCartWrapper>
@@ -205,4 +230,12 @@ const CheckoutDescription = styled.li`
 const PayButton = styled(CheckoutButton)`
   margin: 0.8rem 0 0.5rem 0;
   border: none;
+`;
+
+const OrderPlacedText = styled.span`
+  padding: 1rem 0 0 0;
+`;
+
+const ContinueShoppingButton = styled(PayButton)`
+  margin-top: 1rem;
 `;
