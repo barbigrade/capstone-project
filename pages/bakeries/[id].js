@@ -3,7 +3,6 @@ import BakeryDetails from '../../components/BakeryDetails';
 import BakeryMenu from '../../components/BakeryMenu';
 import bakeries from '../../data.json';
 import BackButton from '../../components/BackButton';
-import useLocalStorage from '../../hooks/useLocalStorage';
 import ShoppingCartIcon from '../../components/ShoppingCartIcon';
 
 export function getAllBakeries() {
@@ -38,32 +37,8 @@ export function getStaticProps(context) {
   };
 }
 
-export default function BakeryDetailPage({
-  bakeryData,
-  onAddToCart,
-  cart,
-  setCart,
-}) {
+export default function BakeryDetailPage({ bakeryData, onAddToCart, cart }) {
   const productMenu = bakeryData.productMenu;
-
-  // const [cart, setCart] = useLocalStorage('_cart', []);
-
-  // function addToCart(item) {
-  //   const existingCartItem = cart.find(
-  //     (cartItem) => cartItem.productId === item.productId
-  //   );
-  //   if (existingCartItem) {
-  //     setCart(
-  //       cart.map((cartItem) =>
-  //         cartItem.productId === existingCartItem
-  //           ? { ...existingCartItem, count: existingCartItem.count + 1 }
-  //           : cartItem
-  //       )
-  //     );
-  //   } else {
-  //     setCart([...cart, { ...item, count: 1 }]);
-  //   }
-  // }
 
   return (
     <>
@@ -93,7 +68,7 @@ export default function BakeryDetailPage({
             cost={item.cost}
             productId={item.productId}
             key={item.productId}
-            onAddToCart={() => onAddToCart(item, setCart, cart)}
+            onAddToCart={onAddToCart}
           />
         ))}
       </BakeryContainer>

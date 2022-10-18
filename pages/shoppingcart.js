@@ -2,14 +2,12 @@ import Image from 'next/image';
 import styled from 'styled-components';
 import PrimaryButton from '../components/PrimaryButton';
 import ShoppingCartCard from '../components/ShoppingCartCard';
-// import useLocalStorage from '../hooks/useLocalStorage';
 import CartItem from '../components/CartItem';
 import BackButton from '../components/BackButton';
 import ShoppingCartIcon from '../components/ShoppingCartIcon';
 import { useState } from 'react';
 
 export default function ShoppingCartPage({ cart, setCart }) {
-  // const [cart, setCart] = useLocalStorage('_cart', []);
   const ShoppingCartTotal = cart
     .reduce((sum, item) => sum + item.cost * item.count, 0)
     .toFixed(2);
@@ -179,14 +177,19 @@ const CheckoutButton = styled.button`
   font-family: 'Quicksand', sans-serif;
   font-weight: 600;
   padding: 10px 15px;
-
   :hover {
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.8);
     color: rgba(255, 105, 0, 1);
   }
 `;
-
+const PayButton = styled(CheckoutButton)`
+  margin: 0.8rem 0 0.5rem 0;
+  border: none;
+`;
+const ContinueShoppingButton = styled(PayButton)`
+  margin-top: 1rem;
+`;
 const CheckoutCard = styled.div`
   display: flex;
   flex-direction: column;
@@ -201,7 +204,6 @@ const CheckoutCard = styled.div`
   transform: translate(-50%, -50%);
   width: 95vw;
   max-width: 35rem;
-
   ul {
     border-bottom: 1px solid #ffffff;
     list-style: none;
@@ -209,7 +211,6 @@ const CheckoutCard = styled.div`
     margin: 0 0 0.8rem 0;
   }
 `;
-
 const CheckoutTitle = styled.h2`
   font-size: xx-large;
   font-weight: 300;
@@ -217,7 +218,6 @@ const CheckoutTitle = styled.h2`
   margin: 0.5rem 0 0 0;
   border-bottom: 1px solid #ffffff;
 `;
-
 const CheckoutDescription = styled.li`
   display: flex;
   margin: 0.5rem 0 0.5rem 0;
@@ -225,16 +225,6 @@ const CheckoutDescription = styled.li`
   justify-content: left;
   padding: 0;
 `;
-
-const PayButton = styled(CheckoutButton)`
-  margin: 0.8rem 0 0.5rem 0;
-  border: none;
-`;
-
 const OrderPlacedText = styled.span`
   padding: 1rem 0 0 0;
-`;
-
-const ContinueShoppingButton = styled(PayButton)`
-  margin-top: 1rem;
 `;

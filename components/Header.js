@@ -19,11 +19,11 @@ const HeaderWrapper = styled.header`
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 3.899rem;
+  height: 3.9rem;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 1;
 `;
 const HeadLine = styled.h1`
   margin: 0.7rem 0 0.7rem;

@@ -1,11 +1,8 @@
-import useLocalStorage from '../hooks/useLocalStorage';
 import Link from 'next/link';
 import Image from 'next/image';
 import styled from 'styled-components';
 
 export default function ShoppingCartIcon({ cart }) {
-  // const [cart] = useLocalStorage('_cart', []);
-
   return (
     <Link href={'/shoppingcart'}>
       <Anchor>
@@ -26,7 +23,7 @@ const Anchor = styled.a`
   position: fixed;
   right: 1.4rem;
   top: 0.6rem;
-  z-index: 11;
+  z-index: 2;
 `;
 
 const Counter = styled.div`

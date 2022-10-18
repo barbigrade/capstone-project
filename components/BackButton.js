@@ -22,5 +22,5 @@ const AnchorTag = styled.a`
   top: 0.6rem;
   margin-left: 0.5rem;
   position: fixed;
-  z-index: 11;
+  z-index: 2;
 `;

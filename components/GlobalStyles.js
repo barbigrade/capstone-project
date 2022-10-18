@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
     }
     main {
-        padding-top: 3.899rem;
+        padding-top: 3.9rem;
     }
 `;
 
