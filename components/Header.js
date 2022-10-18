@@ -1,20 +1,13 @@
 import styled from 'styled-components';
-import Image from 'next/image';
 import Link from 'next/link';
+import useLocalStorage from '../hooks/useLocalStorage';
 
 export default function Header() {
   return (
     <HeaderWrapper>
-      <HeadLine>DAILY BREAD</HeadLine>
-      <Link href={'/shoppingcart'}>
+      <Link href={'/'}>
         <Anchor>
-          <Image
-            alt="shopping cart icon"
-            src="https://res.cloudinary.com/drthrskm2/image/upload/v1665657772/capstone-project/icons/shoppingbasket_aubvbk.svg"
-            layout="fixed"
-            width={40}
-            height={40}
-          />
+          <HeadLine>DAILY BREAD</HeadLine>
         </Anchor>
       </Link>
     </HeaderWrapper>
@@ -22,9 +15,15 @@ export default function Header() {
 }
 
 const HeaderWrapper = styled.header`
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   width: 100%;
+  height: 3.9rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 `;
 const HeadLine = styled.h1`
   margin: 0.7rem 0 0.7rem;
@@ -32,7 +31,5 @@ const HeadLine = styled.h1`
 `;
 
 const Anchor = styled.a`
-  position: absolute;
-  top: 0.6rem;
-  right: 1.4rem;
+  text-decoration: none;
 `;

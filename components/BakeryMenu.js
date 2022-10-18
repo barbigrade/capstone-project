@@ -26,7 +26,13 @@ export default function BakeryMenu({
         <Text className="cost">{cost}</Text>
       </TextWrapper>
       <ImageWrapper>
-        <Image src={image} layout="fixed" width={135} height={135} />
+        <Image
+          alt="Product thumbnail"
+          src={image}
+          layout="fixed"
+          width={135}
+          height={135}
+        />
       </ImageWrapper>
       <HiddenOptions>
         {showHiddenOptions && (

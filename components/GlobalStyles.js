@@ -9,6 +9,9 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
     }
+    main {
+        padding-top: 3.9rem;
+    }
 `;
 
 export default GlobalStyle;

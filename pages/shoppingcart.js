@@ -2,19 +2,37 @@ import Image from 'next/image';
 import styled from 'styled-components';
 import PrimaryButton from '../components/PrimaryButton';
 import ShoppingCartCard from '../components/ShoppingCartCard';
-import useLocalStorage from '../hooks/useLocalStorage';
 import CartItem from '../components/CartItem';
 import BackButton from '../components/BackButton';
+import ShoppingCartIcon from '../components/ShoppingCartIcon';
+import { useState } from 'react';
 
-export default function ShoppingCartPage() {
-  const [cart, setCart] = useLocalStorage('_cart', []);
+export default function ShoppingCartPage({ cart, setCart }) {
+  const ShoppingCartTotal = cart
+    .reduce((sum, item) => sum + item.cost * item.count, 0)
+    .toFixed(2);
+
+  const [showOrderPlaced, setShowOrderPlaced] = useState(false);
+  function OrderPlaced() {
+    setShowOrderPlaced(!showOrderPlaced);
+  }
+
+  function removeAllItemsFromCart() {
+    setCart([]);
+  }
 
   function removeFromCart(productId) {
     setCart(cart.filter((cartItem) => cartItem.productId !== productId));
   }
 
+  const [showCheckout, setShowCheckout] = useState(false);
+  function showCheckoutCard() {
+    setShowCheckout(!showCheckout);
+  }
+
   return (
     <>
+      <ShoppingCartIcon cart={cart} />
       {cart.length > 0 && (
         <ShoppingCartWrapper>
           <ShoppingCartHeader>Bread Basket</ShoppingCartHeader>
@@ -33,6 +51,48 @@ export default function ShoppingCartPage() {
               onRemoveFromCart={removeFromCart}
             />
           ))}
+          <ShoppingCartFooterWrapper>
+            <ShoppingCartFooter>
+              Total:
+              {' €'}
+              {ShoppingCartTotal}
+            </ShoppingCartFooter>
+            <CheckoutButton onClick={showCheckoutCard}>Checkout</CheckoutButton>
+          </ShoppingCartFooterWrapper>
+          {showCheckout && (
+            <CheckoutCard>
+              <CheckoutTitle>
+                {showOrderPlaced ? 'Success!' : 'Summary'}
+              </CheckoutTitle>
+              {showOrderPlaced ? (
+                <OrderPlacedText>Your order has been placed!</OrderPlacedText>
+              ) : (
+                <ul>
+                  {cart.map((item) => (
+                    <CheckoutDescription key={item.productId}>
+                      {`${item.name} | ${item.cost}`}
+                    </CheckoutDescription>
+                  ))}
+                </ul>
+              )}
+              {showOrderPlaced ? (
+                <ContinueShoppingButton onClick={removeAllItemsFromCart}>
+                  Continue Shopping
+                </ContinueShoppingButton>
+              ) : (
+                <span>
+                  Total:
+                  {' €'}
+                  {ShoppingCartTotal}
+                </span>
+              )}
+              {showOrderPlaced ? (
+                ''
+              ) : (
+                <PayButton onClick={OrderPlaced}>Place Order</PayButton>
+              )}
+            </CheckoutCard>
+          )}
         </ShoppingCartWrapper>
       )}
 
@@ -70,6 +130,18 @@ const ShoppingCartHeader = styled.h2`
   margin: 2rem 0 0 0;
 `;
 
+const ShoppingCartFooterWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 0.1rem 0;
+`;
+
+const ShoppingCartFooter = styled.h4`
+  font-weight: 500;
+  margin: 0 0 0.5rem 0;
+`;
+
 const ShoppingCartWrapper = styled.div`
   display: grid;
   gap: 1rem;
@@ -96,4 +168,63 @@ const DescriptionWrapper = styled(ButtonWrapper)`
 
 const BackgroundImageWrapper = styled.div`
   max-height: 100vh;
+`;
+
+const CheckoutButton = styled.button`
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  padding: 10px 15px;
+  :hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 105, 0, 1);
+  }
+`;
+const PayButton = styled(CheckoutButton)`
+  margin: 0.8rem 0 0.5rem 0;
+  border: none;
+`;
+const ContinueShoppingButton = styled(PayButton)`
+  margin-top: 1rem;
+`;
+const CheckoutCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  padding: 1.3rem;
+  background-color: rgba(255, 105, 0, 1);
+  color: #ffffff;
+  align-items: center;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95vw;
+  max-width: 35rem;
+  ul {
+    border-bottom: 1px solid #ffffff;
+    list-style: none;
+    padding: 0.5rem 3rem 0.5rem 0;
+    margin: 0 0 0.8rem 0;
+  }
+`;
+const CheckoutTitle = styled.h2`
+  font-size: xx-large;
+  font-weight: 300;
+  padding: 0 0 0.5rem 0;
+  margin: 0.5rem 0 0 0;
+  border-bottom: 1px solid #ffffff;
+`;
+const CheckoutDescription = styled.li`
+  display: flex;
+  margin: 0.5rem 0 0.5rem 0;
+  font-size: 1rem;
+  justify-content: left;
+  padding: 0;
+`;
+const OrderPlacedText = styled.span`
+  padding: 1rem 0 0 0;
 `;

@@ -5,6 +5,7 @@ import path from 'path';
 import Bakery from '../components/Bakery';
 import Link from 'next/link';
 import Image from 'next/image';
+import ShoppingCartIcon from '../components/ShoppingCartIcon';
 
 export async function getStaticProps() {
   const filePath = path.join(process.cwd(), 'data.json');
@@ -16,14 +17,14 @@ export async function getStaticProps() {
   };
 }
 
-export default function Home(props) {
+export default function Home(props, { cart }) {
   const bakeries = props.bakeries;
   return (
     <>
       <Head>
         <title>DAILY BREAD</title>
       </Head>
-
+      <ShoppingCartIcon cart={cart} />
       <BakeryListContainer>
         <h2>All Bakeries</h2>
 
