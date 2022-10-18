@@ -52,7 +52,6 @@ export default function BakeryDetailPage({ bakeryData, onAddToCart, cart }) {
           score={bakeryData.score}
           delivery={bakeryData.delivery}
           about={bakeryData.about}
-          key={bakeryData.id}
         />
       </BakeryContainerTop>
       <BakeryContainer>
