@@ -1,5 +1,5 @@
 # DAILY BREAD
-> Capstone Project as part of the Web Dev Bootcamp @neuefische, 2022
+> Capstone Project as part of the Web Dev Bootcamp @[neuefische](https://www.neuefische.de/en), 2022
 
 ![Frame 2](https://user-images.githubusercontent.com/107254671/195843070-7f1cb4b4-7efe-41d6-94d3-c7fc4fc5e9c9.svg)
 
