@@ -4,7 +4,7 @@
 ![Frame 2](https://user-images.githubusercontent.com/107254671/195843070-7f1cb4b4-7efe-41d6-94d3-c7fc4fc5e9c9.svg)
 
 ## An app for the lazy bread lover
-Daily Bread is a baked goods delivery app developed for bread aficionados craving a croissant
+Daily Bread is a baked goods delivery app developed for bread aficionados craving a croissant  
 on a Sunday morning who are too ~~busy~~ *lazy* to leave the comfort of their own home. 
 
 The app was built with Next.js and developed as my capstone project in the final four weeks of  
