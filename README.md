@@ -11,7 +11,9 @@ The app was built with Next.js and developed as my capstone project in the final
 the neuefische Web Development Bootcamp in September/October 2022.
 
 Make sure to set up your browser to responsive mode (iPhone SE) as the app is optimized for mobile usage.  
-Find it [here](https://dailybread.vercel.app/) 🥐
+Find it [here](https://dailybread.vercel.app/) or a sneak peek below 🥐
+
+https://user-images.githubusercontent.com/107254671/202265459-40dcb9c9-893d-4dff-bfe9-d137804ed180.mov
 
 ## Tech Stack
 
